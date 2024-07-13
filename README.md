@@ -14,7 +14,15 @@ then
 
 `npm install`
 
-`npm start`
+`npm run dev`
+
+To work on a feature, checkout to a branch(name of the feature), before building.
+
+`git checkout "branch_name"`
+
+On completion, create a PR for the feature worked on
+
+Happy Building!
 
 
 ## Deployment
