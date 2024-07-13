@@ -5,7 +5,8 @@ This project is the website of African Alliance Plc
 
 ## Development
 
-To work on the project, in your CMD run:   
+To work on the project, in your command line run:   
+
 `git clone https://github.com/African-Alliance/website.git`
 
 then   
