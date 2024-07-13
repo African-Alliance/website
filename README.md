@@ -17,7 +17,7 @@ then
 
 `npm run dev`
 
-To work on a feature, checkout to a branch(name of the feature), before building.
+To work on a feature, checkout from `dev` branch to a new branch(name of the feature), before building.
 
 `git checkout "branch_name"`
 
