@@ -5,7 +5,8 @@ This project is the website of African Alliance Plc
 
 ## Development
 
-To work on the project, in your CMD run:   
+To work on the project, in your command line run:   
+
 `git clone https://github.com/African-Alliance/website.git`
 
 then   
@@ -32,7 +33,7 @@ In the project root folder, run:
 
 `npm run build`
 
-This uilds the app for production to the `build` folder.\
+This builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 The build is minified and the filenames include the hashes.\
