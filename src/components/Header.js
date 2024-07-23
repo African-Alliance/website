@@ -10,6 +10,15 @@ export default function Header() {
           </div>
           <div class="desktopmenu">
             desktop menu
+            <ul>
+              <li class='menuItem'>
+                <div class='subMenu'>
+                  <ul class='subMenuItem'>
+
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
           <div class="search">
             search
