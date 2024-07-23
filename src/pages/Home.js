@@ -1,14 +1,14 @@
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import HorizontalScrollSection from "../components/HorizontalScrollSection";
 
 export default function Home() {
     return (
-        <>
+        < >
             <div>
                 This is the home page
             </div>
             <div id="others">
-                <Outlet />
-                Child components is rendered here
+                <HorizontalScrollSection />
             </div>
         </>
     );
