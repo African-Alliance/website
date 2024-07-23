@@ -1,0 +1,29 @@
+header {
+    width: 100vw;
+    border: 2px solid gray;
+}
+
+.container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid lightblue;
+}
+
+.logo {
+    height: 100%;
+    width: 15%;
+    border: 2px solid blue;
+}
+
+.desktopmenu {
+    height: 100%;
+    width: 80%;
+    border: 2px solid lightpink;
+}
+
+.search {
+    height: 100%;
+    width: 5%;
+    border: 2px solid lightgreen;
+}
