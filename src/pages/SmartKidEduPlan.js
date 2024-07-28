@@ -1,9 +1,18 @@
 import React from "react";
 
-export default function SmarkKidEducation() {
+export default function SmartKidEducation() {
   return (
+    <>
+
     <div>
-        SmarkKidEducation plan
+        SmartKidEducation plan
     </div>
+    <section>
+      <div class='container'>
+
+      </div>
+    </section>
+    
+    </>
   );
 };
