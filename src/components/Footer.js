@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
         <div className='socials d-flex flex-column-reverse flex-md-row justify-content-around pt-5 pb-3'>
           <div className='pt-3 pt-md-0'>
-            <p className='text-muted'>Copyright &copy; 2018 African AlLinkance Insurance Plc. All rights reserved.</p>
+            <p className='text-muted'>Copyright &copy; 2018 African Alliance Insurance Plc. All rights reserved.</p>
           </div>
           <div className='social-links d-flex justify-content-center justify-content-md-around'>
             <a href='https://www.facebook.com/AAInsurancePLC/' target='_blank' rel="noreferrer" className='social-link'><FontAwesomeIcon className='icon' icon={faFacebookF} /></a>
