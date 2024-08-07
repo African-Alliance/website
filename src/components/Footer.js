@@ -8,14 +8,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-top">
         <div className="footer-overlay text-success">
-          <h2>Welcome to Our Footer</h2>
-          <p>Engaging footer text goes here</p>
         </div>
       </div>
       <div className="footer-content">
         <div className='subscribe d-flex flex-column justify-content-around h-100 flex-md-row justify-content-md-around py-md-3'>
           <div className='subscribe-text col-md-6'>
-            <h3 >Do not miss a thing</h3>
+            <h3 >Subscribe To Our Newsletter</h3>
             <p >Sign up to recieve African Alliance Insurance Plc Newsletter today and never miss the latest industry news, AAI offers and more.</p>
           </div>
           <div className='col-md-6'>
@@ -77,7 +75,7 @@ const Footer = () => {
         </div>
         <div className='socials d-flex flex-column-reverse flex-md-row justify-content-around pt-5 pb-3'>
           <div className='pt-3 pt-md-0'>
-            <p>Copyright &copy; 2018 African AlLinkance Insurance Plc. All rights reserved.</p>
+            <p className='text-muted'>Copyright &copy; 2018 African AlLinkance Insurance Plc. All rights reserved.</p>
           </div>
           <div className='social-links d-flex justify-content-center justify-content-md-around'>
             <a href='https://www.facebook.com/AAInsurancePLC/' target='_blank' rel="noreferrer" className='social-link'><FontAwesomeIcon className='icon' icon={faFacebookF} /></a>
