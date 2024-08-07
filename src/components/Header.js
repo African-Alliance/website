@@ -6,7 +6,7 @@ import '../styles/Header.css';
 export default function Header() {
   return (
     <div class="container-fluid">
-      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1 border-bottom">
         <Link
           to="/"
           class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none"
@@ -94,7 +94,6 @@ export default function Header() {
             </Link>
           </li>
         </ul>
-
 
         <div class="col-md-3 text-end"></div>
       </header>
