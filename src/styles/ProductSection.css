@@ -1,0 +1,15 @@
+.products {
+    background-color: #1b3271;
+    
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.material-icons {
+    font-size: 4rem;
+}

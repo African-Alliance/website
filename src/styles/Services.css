@@ -1,0 +1,41 @@
+
+/* SERVICES SECTION */
+.service-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.service {
+    text-wrap: nowrap;
+    padding: 20px;
+    margin-left: 3px;
+    margin-right: 3px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1b3271;
+   
+}
+
+.material-icons {
+    font-size: 2.5rem;
+}
+
+.service:hover {
+    text-decoration: none;
+    color: #1b3271;
+    /* transform: scale(1.05);  */
+}
+
+.material-icons {
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.service:hover .material-icons {
+    transform: scale(1.2); 
+}
