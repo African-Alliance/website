@@ -10,8 +10,8 @@ const Footer = () => {
         <div className="footer-overlay text-success">
         </div>
       </div>
-      <div className="footer-content">
-        <div className='subscribe d-flex flex-column justify-content-around h-100 flex-md-row justify-content-md-around py-md-3'>
+      <div className="footer-content d-flex flex-column">
+        <div className='subscribe d-flex flex-column justify-content-around h-100 flex-md-row  py-md-3'>
           <div className='subscribe-text col-md-6'>
             <h3 >Subscribe To Our Newsletter</h3>
             <p >Sign up to recieve African Alliance Insurance Plc Newsletter today and never miss the latest industry news, AAI offers and more.</p>
