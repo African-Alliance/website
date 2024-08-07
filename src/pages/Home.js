@@ -13,7 +13,7 @@ export default function Home() {
             <div id="others">
                 <HorizontalScrollSection />
                 <Services />
-                {/* <ProductSection /> */}
+                <ProductSection />
                 <Features />
                 <PayPremium />
                 <ExploreMore />

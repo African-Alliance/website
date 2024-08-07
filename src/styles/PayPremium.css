@@ -19,8 +19,9 @@
     justify-content: space-around;
     align-items: center;
     margin: auto 0;
-    border-radius: 30px;
     text-decoration: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem;
 }
 
 .premium-btn span {

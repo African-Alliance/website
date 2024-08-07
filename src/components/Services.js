@@ -8,8 +8,9 @@ const Services = () => {
         <>
             <div className="mt-3 mt-md-5 py-md-3">
                 <FadeInSection>
-                    <div className="text-center">
-                        <h3>Easy access to Services</h3>
+                    <div className="service-header text-center">
+                        <h3>Services</h3>
+                        <p></p>
                     </div>
                 </FadeInSection>
                 <FadeInSection>

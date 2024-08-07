@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/PayPremium.css';
+import FadeInSection from './FadeInSection';
 
 const PayPremium = () => {
     return (
@@ -19,7 +20,6 @@ const PayPremium = () => {
                     </div>
                 </div>
             </div>
-
         </>
     );
 };

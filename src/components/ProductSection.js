@@ -2,41 +2,17 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faNairaSign } from '@fortawesome/free-solid-svg-icons';
 import '../styles/ProductSection.css';
+import { Link } from 'react-router-dom';
 
 const ProductSection = () => {
     return (
         <>
-            <div class="products d-flex product-list flex-wrap py-5">
-                <div class="product col-6 col-md-3 p-2">
-                    <span className="material-icons">volunteer_activism</span>
-                    <p>Savings</p>
-                </div>
-                <div class="product col-6 col-md-3 p-2">
-                    <span className="material-icons">diversity_1</span>
-                    <p>Child and Family</p>
-                </div>
-                <div class="product col-6 col-md-3 p-2">
-                    <span className="material-icons">real_estate_agent</span>
-                    <p>Mortgage</p>
-                </div>
-                <div class="product col-6 col-md-3 p-2">
-                    <FontAwesomeIcon className='material-icons icon' icon={faNairaSign} />
-                    <p>Esusu</p>
-                </div>
-                <div class="product col-6 col-md-3 p-2">
-                    <span className="material-icons">volunteer_activism</span>
-                    <p>Savings</p>
-                </div>
-                <div class="product col-6 col-md-3 p-2">
-                    <span className="material-icons">diversity_1</span>
-                    <p>Child and Family</p>
-                </div>
-                <div class="product col-6 col-md-3 p-2">
-                    <span className="material-icons">real_estate_agent</span>
-                    <p>Mortgage</p>
-                </div>
+            <div class="contact-badge d-flex flex-column flex-md-row justify-content-around align-items-center py-5 py-md-4 px-2">
+                <p className='text-wrap'>
+                    <span className='badge-span '>New to Insurance?</span> Speak to us to find out the right product for you
+                </p>
+                <Link className='badge-link text-center mt-3 mt-md-0'>Talk to us</Link>
             </div>
-
         </>
     );
 };

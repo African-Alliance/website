@@ -1,15 +1,28 @@
-.products {
+.contact-badge {
     background-color: #1b3271;
-    
+    color: white;
+    font-size: 1.1rem;
 }
 
-.product {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.badge-link {
+    width: 10rem;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.9rem;
+    background-color: inherit;
+    padding: 0.7rem;
 }
 
-.material-icons {
-    font-size: 4rem;
+.badge-link:hover {
+    text-decoration: none;
+    color: #1b3271;
+    border: 2px solid white;
+    border-radius: 0.9rem;
+    background-color: white;
+    padding: 0.7rem;
+}
+
+.badge-span {
+    font-weight: bolder;
 }
