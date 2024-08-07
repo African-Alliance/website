@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/Footer.css';
 import { faFacebookF, faXTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { Link, Linknk } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -29,7 +29,7 @@ const Footer = () => {
         </div>
         <div className='contents d-flex flex-column flex-md-row my-5'>
           <div className='col-md-3 py-4 py-md-1'>
-            <img />
+            <img alt='african alliance logo' />
             <p >Our core competencies are a creative combination of Protection (Term Assurance and Group Linkfe),
               Savings and Investment Products and over the years, African Alliance has estabLinkshed a solid
               reputation for excellent customer service and prompt claims settlement.

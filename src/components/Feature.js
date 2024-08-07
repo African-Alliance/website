@@ -23,7 +23,7 @@ const Features = () => {
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} />
+                                    <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
                                             Investment Plus
@@ -40,7 +40,7 @@ const Features = () => {
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} />
+                                    <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
                                             Children Education
@@ -58,7 +58,7 @@ const Features = () => {
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} />
+                                    <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
                                             Mortgage Protection
@@ -75,7 +75,7 @@ const Features = () => {
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} />
+                                    <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
                                             Money Appreciation
@@ -93,7 +93,7 @@ const Features = () => {
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} />
+                                    <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
                                             Income Special Plan
@@ -111,7 +111,7 @@ const Features = () => {
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} />
+                                    <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
                                         Smart Kid Plan

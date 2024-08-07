@@ -9,7 +9,6 @@ import Services from '../components/Services';
 export default function Home() {
     return (
         < >
-
             <div id="others">
                 <HorizontalScrollSection />
                 <Services />
