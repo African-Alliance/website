@@ -1,0 +1,12 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0 solid transparent;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1;
+    text-rendering: optimizeSpeed;
+}
