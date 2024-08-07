@@ -6,3 +6,119 @@
 #menuItem {
     padding: 0px 20px;
 }
+
+.subMenuStyle {
+    z-index: 5;
+    width: 100%;
+    left: 0;
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+    box-shadow: 1px 10px 20px -5px rgba(0, 0, 0, .3);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s ease .3s opacity .2s ease .1s;
+}
+
+#menuItem:hover .subMenuStyle {
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s ease 0s opacity .2s ease;
+}
+
+/* header #navLinks #menuItem:hover + span.stroke {
+    visibility: visible;
+    opacity: 1;
+    width: 60px;
+    transition: visibility 0s ease 0s opacity .2s ease;
+} */
+
+.subMenuItemStyle {
+    margin-right: 45px;
+}
+
+.subNavBlock {
+    padding-left: 30px;
+    border-left: 1px solid #e5e5e5;
+}
+
+.subNavBlock:first-child {
+    border-left: 0 none;
+}
+
+.subMenuTitle.subNavMenuTitle {
+    display: block;
+    width: auto;
+    padding-right: 0;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.subItemsWraper.subNavItemsWraper {
+    border-left: 0 none;
+    padding-left: 0;
+    max-height: auto;
+}
+
+.subMenuTitle {
+    width: 50%;
+    font-size: 24px;
+    font-weight: 700;
+    color: #002f6c;
+    text-transform: uppercase;
+    text-align: right;
+    padding-right: 65px;
+}
+
+.subItemsWraper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 45px;
+    list-style: none;
+    border-left: 1px solid #e5e5e5;
+}
+
+.subMenuLinkStyle {
+    display: block;
+    padding: 7px 0px;
+    text-transform: none;
+    text-decoration: none;
+    color: #436BA0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+/* .stroke {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #f07662;
+    transform: translate3d(0, 0, 0);
+    visibility: hidden;
+    transition: transform .2s ease, width .2s ease, visibility 0s ease .2s;
+} */
+
+.firstLevelLink {
+    display: flex;
+    padding: 0 5px;
+    margin: 0 5px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #00008f;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: .1em;
+    transition: color .2s ease-out, font-weight .2s ease-out;
+}
