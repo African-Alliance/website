@@ -1,14 +1,22 @@
-import { Outlet } from "react-router-dom";
+import React from 'react';
+import HorizontalScrollSection from "../components/HorizontalScrollSection";
+import ProductSection from '../components/ProductSection';
+import Features from '../components/Feature';
+import PayPremium from '../components/PayPremium';
+import ExploreMore from '../components/ExploreMore';
+import Services from '../components/Services';
 
 export default function Home() {
     return (
-        <>
-            <div>
-                This is the home page
-            </div>
+        < >
+
             <div id="others">
-                <Outlet />
-                Child components is rendered here
+                <HorizontalScrollSection />
+                <Services />
+                <ProductSection />
+                <Features />
+                <PayPremium />
+                <ExploreMore />
             </div>
         </>
     );

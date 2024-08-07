@@ -1,0 +1,79 @@
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel-item {
+    animation: fadeInLeft 2s ease-in-out;
+}
+
+.carousel-item:nth-child(even) {
+    animation: fadeInRight 2s ease-in-out;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fallback for no JS */
+}
+
+.custom-caption {
+    background: none; /* This will be overridden by inline styles set by JS */
+}
+
+/* SETTING HEIGHT OF THE CAROUSEL */
+#carouselExampleFade {
+    height: 60vh; 
+}
+
+.carousel-item, .carousel-item img {
+    height: 100%;
+}
+
+.carousel-item img {
+    height: 60vh;
+
+}
+
+
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+
+
+
+    .carousel-caption {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+
+
+    .custom-caption {
+        background: rgba(255, 255, 255, 0.7); /* Slight white background on mobile */
+        width: 80vw;
+    }
+}
+

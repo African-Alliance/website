@@ -1,0 +1,41 @@
+.explore-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.explore-container img {
+    width: 50%;
+    height: auto; 
+    max-width: 100%;
+}
+
+
+
+.explore-container h4, .explore-container p {
+    margin: 0;
+    color: #1b3271;
+}
+
+.explore-btn {
+    background-color: #1b3271;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .explore-container img {
+        width: 100%;
+        height: auto; 
+        max-width: 100%;
+    }
+}
