@@ -36,25 +36,25 @@ export default function AnnuityPlan() {
                     <div className="product col-12 col-sm-6 col-md-3 p-2 text-center">
                         <span className="material-icons">diversity_1</span>
                         <h3>Child and Family</h3>
-                        <h6></h6>
+                        <h6>Another</h6>
                         <p></p>
                     </div>
                     <div className="product col-12 col-sm-6 col-md-3 p-2 text-center">
                         <span className="material-icons">real_estate_agent</span>
                         <h3>Mortgage</h3>
-                        <h6></h6>
+                        <h6>Another</h6>
                         <p></p>
                     </div>
                     <div className="product col-12 col-sm-6 col-md-4 p-2 text-center">
                         <span className="material-icons">diversity_1</span>
                         <h3>Child and Family</h3>
-                        <h6></h6>
+                        <h6>Another</h6>
                         <p></p>
                     </div>
                     <div className="product col-12 col-sm-6 col-md-4 p-2 text-center">
                         <span className="material-icons">real_estate_agent</span>
                         <h3>Mortgage</h3>
-                        <h6></h6>
+                        <h6>Another</h6>
                         <p></p>
                     </div>
                 </div>

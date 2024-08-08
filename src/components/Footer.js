@@ -3,7 +3,6 @@ import '../styles/Footer.css';
 import { faFacebookF, faXTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import AAlogo from '../assets/AAI_Logo.png'
-import AnnuityPlan from '../pages/AnnuityPlans';
 
 const Footer = () => {
   return (
