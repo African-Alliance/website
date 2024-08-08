@@ -40,22 +40,23 @@ const Footer = () => {
           <div className='col-md-3 py-4 py-md-1'>
             <h5>Products</h5>
             <div className='content-list'>
-              <Link className='content-item'><span>Esusu</span></Link>
-              <Link to="/annuity" className='content-item'
+              <Link className='content-item'><span>Children Education Plan (CEP)</span></Link>
+              <Link className='content-item'
                 onClick={() => {
                   window.scroll({
                     top: 0,
                     left: 0,
                     behavior: "smooth",
                   });
-                }}><span>Annuity Plan</span>
-              </Link>
-              <Link className='content-item'><span>Children Education Plan</span></Link>
-              <Link className='content-item'><span>Mortgage Protection Plan</span></Link>
-              <Link className='content-item'><span>AlLinkance Investment Plus Plan</span></Link>
-              <Link className='content-item'><span>MoneyAppreciation Plan</span></Link>
-              <Link className='content-item'><span>Smart Kid Education</span></Link>
-
+                }}
+              ><span>Children Education Plan</span></Link>
+              <Link className='content-item'><span>Group Alliance Income Investment Plan</span></Link>
+              <Link className='content-item'><span>The African Alliance Investment Plus Plan Special</span></Link>
+              <Link className='content-item'><span>The African Alliance Investment Plus Plan</span></Link>
+              <Link className='content-item'><span>The African Alliance Income Investment Plan</span></Link>
+              <Link className='content-item'><span>The African Alliance Term Assurance Plan</span></Link>
+              <Link className='content-item'><span>The African Alliance Money Appreciation Plan</span></Link>
+              <Link className='content-item'><span>The African Alliance Smart Kid Educational Plan</span></Link>
             </div>
           </div>
           <div className='col-md-3 py-4 py-md-1'>
@@ -65,11 +66,8 @@ const Footer = () => {
               <Link className='content-item'><span>Customer Complaints Policy</span></Link>
               <Link className='content-item'><span>Claims</span></Link>
               <Link className='content-item'><span>Complaints</span></Link>
-              <Link className='content-item'><span>Security Trading Policy</span></Link>
-              <Link className='content-item'><span>Privacy Policy</span></Link>
               <Link className='content-item'><span>Whistle Blower</span></Link>
-              <Link className='content-item'><span>BCP Policy</span></Link>
-              <Link className='content-item'><span>Branch Locator</span></Link>
+
             </div>
           </div>
           <div className='col-md-3'>
@@ -78,7 +76,10 @@ const Footer = () => {
               <Link className='content-item'><span>Contact us</span></Link>
               <Link className='content-item'><span>About</span></Link>
               <Link className='content-item'><span>Our Values</span></Link>
-              <Link className='content-item'></Link>
+              <Link className='content-item'><span>Security Trading Policy</span></Link>
+              <Link className='content-item'><span>Privacy Policy</span></Link>
+              <Link className='content-item'><span>BCP Policy</span></Link>
+              <Link className='content-item'><span>Branch Locator</span></Link>
             </div>
           </div>
         </div>
