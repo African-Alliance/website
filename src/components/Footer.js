@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/Footer.css';
 import { faFacebookF, faXTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
+import AAlogo from '../assets/AAI_Logo.png'
 
 const Footer = () => {
   return (
@@ -28,9 +29,9 @@ const Footer = () => {
           </div>
         </div>
         <div className='contents d-flex flex-column flex-md-row my-5'>
-          <div className='col-md-3 py-4 py-md-1'>
-            <img alt='african alliance logo' />
-            <p >Our core competencies are a creative combination of Protection (Term Assurance and Group Linkfe),
+          <div className='logo-section col-md-3 py-4 py-md-1'>
+            <img src={AAlogo} alt='african alliance logo' />
+            <p className='logo-section-text'>Our core competencies are a creative combination of Protection (Term Assurance and Group Linkfe),
               Savings and Investment Products and over the years, African Alliance has estabLinkshed a solid
               reputation for excellent customer service and prompt claims settlement.
             </p>
@@ -73,9 +74,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='socials d-flex flex-column-reverse flex-md-row justify-content-around pt-5 pb-3'>
-          <div className='pt-3 pt-md-0'>
-            <p className='text-muted'>Copyright &copy; 2018 African Alliance Insurance Plc. All rights reserved.</p>
+        <div className='socials col-12 d-flex flex-column-reverse flex-md-row  justify-content-around pt-5 pb-3'>
+          <div className='pt-3 pt-md-0 text-start'>
+            <p className='text-muted text-start'>Copyright &copy; 2018 African Alliance Insurance Plc. All rights reserved.</p>
           </div>
           <div className='social-links d-flex justify-content-center justify-content-md-around'>
             <a href='https://www.facebook.com/AAInsurancePLC/' target='_blank' rel="noreferrer" className='social-link'><FontAwesomeIcon className='icon' icon={faFacebookF} /></a>

@@ -61,10 +61,7 @@ const HorizontalScrollSection = () => {
                             src={slide.src}
                             alt={slide.alt}
                         />
-                        <div className="carousel-caption custom-caption" style={{ backgroundColor: colors[index] }}>
-                            <h5>{slide.label}</h5>
-                            <p>{slide.text} - {colors[index]}</p>
-                        </div>
+
                     </div>
                 ))}
             </div>
