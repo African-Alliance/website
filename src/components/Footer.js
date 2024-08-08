@@ -39,36 +39,36 @@ const Footer = () => {
           <div className='col-md-3 py-4 py-md-1'>
             <h5>Products</h5>
             <div className='content-list'>
-              <Link className='content-item'>Esusu</Link>
-              <Link className='content-item'>Annuity Plan</Link>
-              <Link className='content-item'>Children Education Plan</Link>
-              <Link className='content-item'>Mortgage Protection Plan</Link>
-              <Link className='content-item'>AlLinkance Investment Plus Plan</Link>
-              <Link className='content-item'>MoneyAppreciation Plan</Link>
-              <Link className='content-item'>Smart Kid Education</Link>
+              <Link className='content-item'><span>Esusu</span></Link>
+              <Link className='content-item'><span>Annuity Plan</span></Link>
+              <Link className='content-item'><span>Children Education Plan</span></Link>
+              <Link className='content-item'><span>Mortgage Protection Plan</span></Link>
+              <Link className='content-item'><span>AlLinkance Investment Plus Plan</span></Link>
+              <Link className='content-item'><span>MoneyAppreciation Plan</span></Link>
+              <Link className='content-item'><span>Smart Kid Education</span></Link>
               
             </div>
           </div>
           <div className='col-md-3 py-4 py-md-1'>
             <h5>Resources</h5>
             <div className='content-list'>
-              <Link className='content-item'>News</Link>
-              <Link className='content-item'>Customer Complaints Policy</Link>
-              <Link className='content-item'>Claims</Link>
-              <Link className='content-item'>Complaints</Link>
-              <Link className='content-item'>Security Trading Policy</Link>
-              <Link className='content-item'>Privacy Policy</Link>
-              <Link className='content-item'>Whistle Blower</Link>
-              <Link className='content-item'>BCP Policy</Link>
-              <Link className='content-item'>Branch Locator</Link>
+              <Link className='content-item'><span>News</span></Link>
+              <Link className='content-item'><span>Customer Complaints Policy</span></Link>
+              <Link className='content-item'><span>Claims</span></Link>
+              <Link className='content-item'><span>Complaints</span></Link>
+              <Link className='content-item'><span>Security Trading Policy</span></Link>
+              <Link className='content-item'><span>Privacy Policy</span></Link>
+              <Link className='content-item'><span>Whistle Blower</span></Link>
+              <Link className='content-item'><span>BCP Policy</span></Link>
+              <Link className='content-item'><span>Branch Locator</span></Link>
             </div>
           </div>
           <div className='col-md-3'>
             <h5>Company</h5>
             <div className='content-list'>
-              <Link className='content-item'>Contact us</Link>
-              <Link className='content-item'>About</Link>
-              <Link className='content-item'>Our Values</Link>
+              <Link className='content-item'><span>Contact us</span></Link>
+              <Link className='content-item'><span>About</span></Link>
+              <Link className='content-item'><span>Our Values</span></Link>
               <Link className='content-item'></Link>
             </div>
           </div>

@@ -43,11 +43,11 @@ const router = createBrowserRouter([
         element: <SmartKidEducation />,
       },
       {
-        path: "annuity",
+        path: "/annuity",
         element: <AnnuityPlan />,
       },
       {
-        path: "alliance-investment-plus",
+        path: "/alliance-investment-plus",
         element: <AllianceInvestmentPlus/>,
       },
     ],

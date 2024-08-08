@@ -3,7 +3,9 @@ import React from "react";
 export default function AnnuityPlan() {
     return (
         <div>
-            <h1>Annuity</h1>
+            <div>Image here</div>
+            <div>Intro text</div>
+            <div>Features</div>
         </div>
     );
 };

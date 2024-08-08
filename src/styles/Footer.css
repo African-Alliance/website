@@ -85,12 +85,43 @@
     color: white;
 }
 
-.content-item {
-    text-decoration: none;
-    color: white;
-}
 
 .content-item:hover {
     text-decoration: none;
     color: white;
+}
+
+
+.content-item {
+    position: relative; /* Ensure the pseudo-element is positioned relative to the link */
+    text-decoration: none;
+    color: white;
+    margin: 0.7rem 0;
+}
+
+.content-item:hover {
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (min-width: 768px) {
+    .content-item span {
+        position: relative; /* Ensure the pseudo-element is positioned relative to the span */
+    }
+    
+    .content-item span::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 3px; /* Adjust height as needed */
+        background-color: white;
+        transition: width 0.5s ease-in-out; /* Adjust timing function as needed */
+    }
+    
+    .content-item:hover span::after {
+        width: 100%;
+    }
 }
