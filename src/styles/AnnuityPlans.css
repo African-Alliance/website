@@ -1,0 +1,53 @@
+.annuity-image img {
+    width: 100%;
+    height: auto;
+}
+
+.annuity-content {
+
+}
+
+.intro-header h3 {
+    color: #1b3271;
+}
+
+.intro-text {
+    border-left: 5px solid #1b3271;
+}
+
+.annuity-link {
+    background-color: #1b3271;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem;
+}
+
+
+.annuity-link:hover {
+    background-color: #385ab8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.annuity-features h3 {
+    color: #1b3271;
+}
+
+
+
+.features-list span, .features-list h3 {
+    color: #1b3271;
+}
+
+.features-list h6 {
+    font-weight: bold;
+}
+
+
