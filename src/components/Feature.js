@@ -20,7 +20,7 @@ const Features = () => {
 
                     <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" data-aos-id-blocks>
 
-                        <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+                        <div className="col-md-6  col-lg-6" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
                                     <img className="w-100" src={image} alt="product plan" />
@@ -37,7 +37,7 @@ const Features = () => {
                                 </div>
                             </FadeInSection>
                         </div>
-                        <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+                        <div className="col-md-6  col-lg-6" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
                                     <img className="w-100" src={image} alt="product plan" />
@@ -71,23 +71,7 @@ const Features = () => {
                                 </div>
                             </FadeInSection>
                         </div>
-                        <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
-                            <FadeInSection>
-                                <div className="product d-flex flex-column align-items-center">
-                                    <img className="w-100" src={image} alt="product plan" />
-                                    <div className="col-12">
-                                        <h4 className="h4 mb-2">
-                                            Mortgage Protection
-                                        </h4>
-                                        <p className=" text-muted">
-                                            Protect your family from creditors
-                                            when taking a mortgage
-                                        </p>
-                                    </div>
-                                    <Link className="learn-more-btn">Learn More</Link>
-                                </div>
-                            </FadeInSection>
-                        </div>
+
                         <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
                             <FadeInSection>
                                 <div className="product d-flex flex-column align-items-center">
