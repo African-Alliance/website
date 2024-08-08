@@ -26,7 +26,7 @@ const Features = () => {
                                     <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
-                                            Investment Plus
+                                            Investment Plus Plan
                                         </h4>
                                         <p className=" text-muted">
                                             Earn interest on savings towards
@@ -43,8 +43,24 @@ const Features = () => {
                                     <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
-                                            Children Education
-
+                                            Investment Plus Special Plan
+                                        </h4>
+                                        <p className=" text-muted">
+                                            Earn interest on savings towards
+                                            a business or a special project
+                                        </p>
+                                    </div>
+                                    <Link className="learn-more-btn">Learn More</Link>
+                                </div>
+                            </FadeInSection>
+                        </div>
+                        <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+                            <FadeInSection>
+                                <div className="product d-flex flex-column align-items-center">
+                                    <img className="w-100" src={image} alt="product plan" />
+                                    <div className="col-12">
+                                        <h4 className="h4 mb-2">
+                                            Term Assurance Plan
                                         </h4>
                                         <p className=" text-muted">
                                             Invest to fund your children’s
@@ -78,8 +94,7 @@ const Features = () => {
                                     <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
-                                            Money Appreciation
-
+                                            Money Appreciation Plan
                                         </h4>
                                         <p className=" text-muted">
                                             Grow your investments while
@@ -96,9 +111,7 @@ const Features = () => {
                                     <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
-                                            Income Special Plan
-
-
+                                            Income Investment Plan
                                         </h4>
                                         <p className=" text-muted">
                                             A savings plan that has basic life cover
@@ -114,9 +127,40 @@ const Features = () => {
                                     <img className="w-100" src={image} alt="product plan" />
                                     <div className="col-12">
                                         <h4 className="h4 mb-2">
-                                        Smart Kid Plan
+                                        Smart Kid Educational Plan
+                                        </h4>
+                                        <p className=" text-muted">
+                                        Secure your children’s education
+                                        </p>
+                                    </div>
+                                    <Link className="learn-more-btn">Learn More</Link>
+                                </div>
+                            </FadeInSection>
+                        </div>
 
-
+                        <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+                            <FadeInSection>
+                                <div className="product d-flex flex-column align-items-center">
+                                    <img className="w-100" src={image} alt="product plan" />
+                                    <div className="col-12">
+                                        <h4 className="h4 mb-2">
+                                        Group Alliance Income Investment Plan (GAIIP)
+                                        </h4>
+                                        <p className=" text-muted">
+                                        Secure your children’s education
+                                        </p>
+                                    </div>
+                                    <Link className="learn-more-btn">Learn More</Link>
+                                </div>
+                            </FadeInSection>
+                        </div>
+                        <div className="col-md-6  col-lg-4" data-aos="fade-up" data-aos-anchor="[data-aos-id-blocks]">
+                            <FadeInSection>
+                                <div className="product d-flex flex-column align-items-center">
+                                    <img className="w-100" src={image} alt="product plan" />
+                                    <div className="col-12">
+                                        <h4 className="h4 mb-2">
+                                        Children Education Plan (CEP)
                                         </h4>
                                         <p className=" text-muted">
                                         Secure your children’s education
