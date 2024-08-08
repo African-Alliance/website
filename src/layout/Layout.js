@@ -10,7 +10,7 @@ export default function Layout() {
   return (
     <div>
       <Navbar />
-      <main>
+      <main style={{paddingTop: '4rem'}}>
         <Outlet />
       </main>
       <Footer />

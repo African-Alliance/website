@@ -1,10 +1,25 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery'; // Assuming you have jQuery installed
 import '../styles/Navbar.css';
 import logo from "../assets/AAI_Logo.png"
 
 const Navbar = () => {
+
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            setScrolled(offset > 50); // Change navbar background after scrolling 50px
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     useEffect(() => {
         const toggleDropdown = (e) => {
@@ -33,9 +48,9 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark  py-3 shadow-sm fixed-top">
+        <nav className={`navbar navbar-expand-lg navbar-dark py-3 shadow-sm fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
             <Link to="/" className="navbar-logo">
-                <img className='img-fluid' src='' alt="logo"  />
+                <img className='img-fluid' src='' alt="logo" />
             </Link>
             <button
                 className="navbar-toggler order-md-1"
@@ -63,7 +78,7 @@ const Navbar = () => {
                         </a>
                         <div aria-labelledby="megamenu" className="dropdown-menu border-0 p-0 m-0">
                             <div className="container-fluid">
-                                <div className="row dropdown-bg rounded-0 m-0 shadow-sm">
+                                <div className={`row dropdown-bg rounded-0 m-0 shadow-sm ${scrolled ? 'navbar-scrolled' : ''}`}>
                                     <div className="col-12">
                                         <div className="p-4">
                                             <div className="row">
@@ -152,7 +167,7 @@ const Navbar = () => {
                         </a>
                         <div aria-labelledby="megamenu" className="dropdown-menu border-0 p-0 m-0">
                             <div className="container-fluid">
-                                <div className="row dropdown-bg rounded-0 m-0 shadow-sm">
+                                <div className={`row dropdown-bg rounded-0 m-0 shadow-sm ${scrolled ? 'navbar-scrolled' : ''}`}>
                                     <div className="col-12">
                                         <div className="p-4">
                                             <div className="row">
