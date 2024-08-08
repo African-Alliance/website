@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../assets/AAI_Logo.png';
 import '../styles/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
   return (
@@ -15,36 +15,6 @@ export default function Header() {
         >
           <img src={Logo} alt="logo" id="header_logo" />
         </Link>
-
-        <div class="menuMobileStyle">
-          <div>
-            <ul>
-              <li class="menuItemStyle">
-                <Link class="menuLinkStyle">Health</Link>
-                <div class="subMenuStyle">
-                  <div class="menuItemStyle">
-                    <span class="menuLinkStyle subMenuTitle">
-                      Health Insurance
-                    </span>
-                    <ul>
-                      <li class="menuItemStyle">
-                        <Link class="menuLinkStyle">Health Plans</Link>
-                      </li>
-                      <li class="menuItemStyle">
-                        <Link class="menuLinkStyle">EasyCare</Link>
-                      </li>
-                      <li class="menuItemStyle">
-                        <Link class="menuLinkStyle">
-                          International Health Plan
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
 
         <div className="menuDesktopStyle">
           <ul
@@ -162,7 +132,43 @@ export default function Header() {
         </div>
 
         <div class="menuButtonStyle">
-          <FontAwesomeIcon icon={faBars} size='2x' />
+          <input type="checkbox" id="check"/>
+          <label for="check" className="hamburger mb-0">
+            <FontAwesomeIcon icon={faBars} size="2x"/>
+          </label>
+          <label for="check" className="x-mark mb-0">
+            <FontAwesomeIcon icon={faXmark} size="2x" />
+          </label>
+
+          <div class="menuMobileStyle">
+          <div>
+            <ul>
+              <li class="menuItemStyle">
+                <Link class="menuLinkStyle">Health</Link>
+                <div class="subMenuStyle">
+                  <div class="menuItemStyle">
+                    <span class="menuLinkStyle subMenuTitle">
+                      Health Insurance
+                    </span>
+                    <ul>
+                      <li class="menuItemStyle">
+                        <Link class="menuLinkStyle">Health Plans</Link>
+                      </li>
+                      <li class="menuItemStyle">
+                        <Link class="menuLinkStyle">EasyCare</Link>
+                      </li>
+                      <li class="menuItemStyle">
+                        <Link class="menuLinkStyle">
+                          International Health Plan
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
         </div>
       </div>
     </header>

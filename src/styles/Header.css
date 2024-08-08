@@ -1,6 +1,5 @@
 #header_logo {
   height: 58px;
-  margin-left: 40px;
 }
 
 #menuItem {
@@ -17,8 +16,8 @@
 }
 
 .menuDesktopStyle {
-    display: block;
-  }
+  display: block;
+}
 
 @media (min-width: 992px) {
   .menuMobileStyle {
@@ -29,15 +28,15 @@
 }
 
 @media (max-width: 768px) {
-    .menuDesktopStyle {
-      display: none;
-    }
+  .menuDesktopStyle {
+    display: none;
+  }
+  .menuMobileStyle {
+    width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
-  .menuMobileStyle {
-    width: 49%;
-  }
   .menuButtonStyle {
     visibility: hidden;
     opacity: 0;
@@ -48,18 +47,56 @@
 .menuMobileStyle {
   position: fixed;
   z-index: 5;
-  top: 60px;
+  top: 120px;
   bottom: 0;
   right: 0;
   margin-top: 1px;
   background-color: #fff;
   transform: translate3d(100%, 0, 0);
   transition: transform 0.2s ease;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.menuMobileStyle > div {
+  position: relative;
 }
 
 .menuButtonStyle {
-    cursor: pointer;
+    position: relative;
 }
+
+.menuButtonStyle input {
+  display: block;
+  width: 28px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+}
+
+.menuButtonStyle .x-mark {
+    width: 28px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 3;
+}
+
+.menuButtonStyle #check:checked ~ .menuMobileStyle {
+  display: block;
+  transform: none;
+}
+
+.menuButtonStyle #check:checked ~ .x-mark {
+    opacity: 1;
+  }
+
+.menuButtonStyle #check:checked ~ .hamburger {
+    opacity: 0;
+  }
 
 .subMenuStyle {
   z-index: 5;
