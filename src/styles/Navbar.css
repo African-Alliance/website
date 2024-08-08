@@ -1,0 +1,102 @@
+/*
+ * Main theme
+*/
+header {
+    min-height: 100px;
+}
+
+main {
+    min-height: 100vh;
+}
+
+footer {
+    min-height: 100px;
+}
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+
+    .row {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/*
+  *
+  * ==========================================
+  * CUSTOM UTIL CLASSES
+  * ==========================================
+  *
+  */
+.dropdown {
+    &:hover {
+        >.dropdown-menu {
+            display: block;
+        }
+    }
+}
+
+.megamenu {
+    position: static;
+
+    .dropdown-menu {
+        border: none;
+        width: 100%;
+    }
+}
+
+
+.navbar {
+    background-color: #1b3271;
+    color: white;
+    
+}
+
+.dropdown-bg {
+    background-color: #1b3271;
+    color: white;
+}
+
+.dropdown-bg .nav-link {
+    text-decoration: none;
+    margin-top: 0.6rem;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-link:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* MEDIA RESPONSIVENESS */
+@media (min-width: 992px) {
+    
+    .dropdown-bg {
+        color: #1b3271;
+        background-color: white;
+    }
+
+    .dropdown-bg .nav-link {
+        text-decoration: none;
+        margin-top: 0.6rem;
+    }
+
+    .navbar-link {
+        color: #1b3271;
+        text-decoration: none;
+    }
+
+    .navbar-link:hover {
+        color: #1b3271;
+        text-decoration: none;
+    }
+
+}
