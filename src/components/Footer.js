@@ -3,6 +3,7 @@ import '../styles/Footer.css';
 import { faFacebookF, faXTwitter, faInstagram, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 import { Link } from 'react-router-dom';
 import AAlogo from '../assets/AAI_Logo.png'
+import AnnuityPlan from '../pages/AnnuityPlans';
 
 const Footer = () => {
   return (
@@ -41,13 +42,21 @@ const Footer = () => {
             <h5>Products</h5>
             <div className='content-list'>
               <Link className='content-item'><span>Esusu</span></Link>
-              <Link className='content-item'><span>Annuity Plan</span></Link>
+              <Link to="/annuity" className='content-item'
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}><span>Annuity Plan</span>
+              </Link>
               <Link className='content-item'><span>Children Education Plan</span></Link>
               <Link className='content-item'><span>Mortgage Protection Plan</span></Link>
               <Link className='content-item'><span>AlLinkance Investment Plus Plan</span></Link>
               <Link className='content-item'><span>MoneyAppreciation Plan</span></Link>
               <Link className='content-item'><span>Smart Kid Education</span></Link>
-              
+
             </div>
           </div>
           <div className='col-md-3 py-4 py-md-1'>
