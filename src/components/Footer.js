@@ -40,8 +40,8 @@ const Footer = () => {
           <div className='col-md-3 py-4 py-md-1'>
             <h5>Products</h5>
             <div className='content-list'>
-              <Link className='content-item'><span>Children Education Plan (CEP)</span></Link>
               <Link className='content-item'
+              to="/children-education"
                 onClick={() => {
                   window.scroll({
                     top: 0,
@@ -51,7 +51,16 @@ const Footer = () => {
                 }}
               ><span>Children Education Plan</span></Link>
               <Link className='content-item'><span>Group Alliance Income Investment Plan</span></Link>
-              <Link className='content-item'><span>The African Alliance Investment Plus Plan Special</span></Link>
+              <Link className='content-item'
+                to="/investment-special"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>The African Alliance Investment Plus Plan Special</span></Link>
               <Link className='content-item'><span>The African Alliance Investment Plus Plan</span></Link>
               <Link className='content-item'><span>The African Alliance Income Investment Plan</span></Link>
               <Link className='content-item'><span>The African Alliance Term Assurance Plan</span></Link>

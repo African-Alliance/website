@@ -6,8 +6,8 @@ import ChildrenEducation from "./pages/ChildrenEducationPlan";
 import Esusu from "./pages/Esusu";
 import MoneyAppreciation from "./pages/MoneyAppreciationPlan";
 import SmartKidEducation from "./pages/SmartKidEduPlan";
-import AnnuityPlan from "./pages/AnnuityPlans"
 import AllianceInvestmentPlus from "./pages/AllianceInvestmentPlusPlan";
+import InvestmentSpecialPlan from "./pages/InvestmentSpecialPlan";
 
 
 // routing the pages
@@ -43,8 +43,8 @@ const router = createBrowserRouter([
         element: <SmartKidEducation />,
       },
       {
-        path: "/annuity",
-        element: <AnnuityPlan />,
+        path: "/investment-special",
+        element: <InvestmentSpecialPlan />,
       },
       {
         path: "/alliance-investment-plus",
