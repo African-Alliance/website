@@ -80,7 +80,7 @@ export default function Header() {
                   <span class="subMenuTitle subNavMenuTitle">About Us</span>
                   <ul class="subItemsWraper subNavItemsWraper">
                     <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
+                    <Link class="subMenuLinkStyle" to="#">
                         Who We Are
                       </Link>
                     </li>
