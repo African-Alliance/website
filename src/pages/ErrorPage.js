@@ -18,7 +18,7 @@ export default function ErrorPage() {
         </p>
       </div>
       <div>
-        <Link className="btn btn-link goto-btn d-flex  align-items-center" to="/"><span class="material-icons goto-btn-icon">arrow_back</span>Go to Home</Link>
+        <Link className="btn btn-link goto-btn d-flex  align-items-center" to="/">Go to Home</Link>
       </div>
     </div>
   );

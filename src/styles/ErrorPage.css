@@ -8,29 +8,45 @@
 }
 
 .left-pane {
-    background: linear-gradient(to left, #1b3271, white);
+    background: linear-gradient(to left, red, white);
     width: 20rem;
 }
 
 .right-pane {
-    background: linear-gradient(to right, #1b3271, white);
+    background: linear-gradient(to right, red, white);
     width: 20rem;
 }
 
 .pane-text {
     font-weight: bolder;
     font-size: larger;
+    color: red;
 }
 
 .goto-btn {
-    color: #1b3271;
-    font-weight: bold;
+    background-color: #1b3271;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+    border-radius: 30px;
     text-decoration: none;
+
 }
 
 .goto-btn:hover {
-    color: #1b3271;
-    font-weight: bold;
+    background-color: #385ab8;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+    border-radius: 30px;
     text-decoration: none;
 }
 
