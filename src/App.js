@@ -47,7 +47,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/alliance-investment-plus",
-        element: <AllianceInvestmentPlus/>,
+        element: <AllianceInvestmentPlus />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

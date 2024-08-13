@@ -1,0 +1,39 @@
+.error-page {
+    height: 20rem;
+    margin-top: 5rem;
+}
+
+.error-page p, .error-page h1 {
+    text-align: left;
+}
+
+.left-pane {
+    background: linear-gradient(to left, #1b3271, white);
+    width: 20rem;
+}
+
+.right-pane {
+    background: linear-gradient(to right, #1b3271, white);
+    width: 20rem;
+}
+
+.pane-text {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.goto-btn {
+    color: #1b3271;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.goto-btn:hover {
+    color: #1b3271;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.goto-btn-icon {
+    font-size: larger;
+}
