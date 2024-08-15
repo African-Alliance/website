@@ -1,5 +1,6 @@
 import React from "react";
 import '../styles/InvestmentSpecial.css';
+import '../styles/Material_Icon.css';
 import { Link } from "react-router-dom";
 import investment from '../assets/father_looking_at_sons_eyes.jpg'
 
@@ -34,7 +35,7 @@ export default function InvestmentSpecialPlan() {
                         <p>Easily get all plans sorted</p>
                     </div>
                     <div className="product col-12 col-sm-6 col-md-3 p-2 text-center">
-                        <span className="material-icons">diversity_1</span>
+                        <span className="material-icons md-84">diversity_1</span>
                         <h3>Ease of Access</h3>
                         <h6>Another</h6>
                         <p></p>
