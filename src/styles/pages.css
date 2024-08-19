@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
+    height: auto;
 }
 
 .child-edu-bg {
