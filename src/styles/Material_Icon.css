@@ -1,13 +1,6 @@
-.md-18 { font-size: 18px; }
-.md-24 { font-size: 24px; }
-.md-36 { font-size: 36px; }
-.md-48 { font-size: 48px; }
-.md-64 { font-size: 64px; }
-.md-84 { font-size: 84px; }
-.md-128 { font-size: 128px; }
-.md-256 { font-size: 256px; }
+.md-1rem { font-size: 8rem; }
 
-@media (max-width: 576px) {
+/*👉@media (max-width: 576px) {
     .md-xs { font-size: 145px; }
 }
 
@@ -21,4 +14,4 @@
 
 @media (min-width: 992px) {
     .md-lg { font-size: 256px; }
-}
+}👈*/
