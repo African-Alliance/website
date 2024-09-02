@@ -8,6 +8,7 @@ import MoneyAppreciation from "./pages/MoneyAppreciationPlan";
 import SmartKidEducation from "./pages/SmartKidEduPlan";
 import AllianceInvestmentPlus from "./pages/AllianceInvestmentPlusPlan";
 import InvestmentSpecialPlan from "./pages/InvestmentSpecialPlan";
+import TempPage from "./pages/TemplatePage";
 
 
 // routing the pages
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "/alliance-investment-plus",
         element: <AllianceInvestmentPlus />,
+      },
+      {
+        path: "/temp-page",
+        element: <TempPage/>,
       },
       {
         path: "*",

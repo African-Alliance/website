@@ -1,0 +1,70 @@
+.banner-image img {
+    width: 100%;
+    height: auto;
+}
+
+/*👉.product-content {
+
+}👈*/
+
+.intro-header h3 {
+    color: #1b3271;
+}
+
+.intro-bar {
+    border-left: 5px solid #1b3271;
+}
+
+.product-link {
+    background-color: #1b3271;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+    text-decoration: none;
+    border-radius: 1.5rem;
+    padding: 0.7rem;
+}
+
+
+.product-link:hover {
+    background-color: #385ab8;
+    color: #fff;
+    text-decoration: none;
+}
+
+.product-features h3 {
+    color: #1b3271;
+}
+
+
+
+.features-list span, .features-list h3 {
+    color: #1b3271;
+}
+
+.features-list h6 {
+    font-weight: bold;
+}
+
+.caption-title {
+    margin-bottom: 30px;
+}
+
+.caption-subtitle {
+    margin-bottom: 30px;
+}
+
+.typo20 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.typo48 {
+    font-size: 48px;
+    line-height: 55px;
+}
+
