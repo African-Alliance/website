@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Layout from "./layout/Layout";
 import ChildrenEducation from "./pages/ChildrenEducationPlan";
-import Esusu from "./pages/GroupInvestment";
 import MoneyAppreciation from "./pages/MoneyAppreciationPlan";
 import SmartKidEducation from "./pages/SmartKidEduPlan";
 import AllianceInvestmentPlus from "./pages/AllianceInvestmentPlusPlan";

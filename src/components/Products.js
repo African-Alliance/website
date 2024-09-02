@@ -5,11 +5,11 @@ import investment from '../assets/investment.jpg';
 import incomeInvestment from '../assets/income investment plan.jpg';
 import groupInvestment from '../assets/group investment.jpg'
 import termAssurance from '../assets/Term Assurance.jpg'
-import termAssurance2 from '../assets/Term Assurance 2.jpg'
+// import termAssurance2 from '../assets/Term Assurance 2.jpg'
 import moneyAppreciation from '../assets/money appreciation plan.jpg';
 import smartKid from '../assets/smart kid education plan.jpg';
 import childrenEducation from '../assets/children education plan.jpg';
-import image from '../assets/testimage.jpg'
+// import image from '../assets/testimage.jpg'
 import { Link } from "react-router-dom";
 
 const Products = () => {

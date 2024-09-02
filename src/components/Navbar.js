@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import $ from 'jquery'; // Assuming you have jQuery installed
 import '../styles/Navbar.css';
-import logo from "../assets/AAI_Logo.png"
+// import logo from "../assets/AAI_Logo.png"
 
 const Navbar = () => {
 
