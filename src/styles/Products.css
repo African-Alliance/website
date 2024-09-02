@@ -1,0 +1,46 @@
+.product {
+    margin: 1.5rem 0.8rem;
+}
+
+.product img {
+    width: 100px;
+}
+
+.product h3 {
+    font-weight: 700;
+}
+
+.learn-more-btn {
+    text-decoration: none;
+    color: #1b3271;
+    font-size: 100;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+}
+
+
+.learn-more-btn .material-icons {
+    color: #1b3271;
+    font-size: 1.1rem;
+    margin-top: 2px;
+    margin-left: 5px;
+    font-weight: bolder;
+}
+
+.learn-more-btn:hover {
+    color: #1b3271;
+    text-decoration: none;
+}
+
+.feature-header {
+    color: #1b3271;
+    font-weight: bold;
+    font-size: bold;
+}
+
+.product-text {
+    padding: 0;
+    margin-top: 1.2rem;
+
+}

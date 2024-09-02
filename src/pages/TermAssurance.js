@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Esusu() {
+export default function TermAssurance() {
   return (
     <div>
-        Esusu plan
+        Term assurance
     </div>
   );
 };

@@ -46,7 +46,7 @@ const HorizontalScrollSection = () => {
     ];
 
     return (
-        <div id="carouselExampleFade" className="carousel slide" data-ride="carousel">
+        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
             <ol className="carousel-indicators">
                 {slides.map((_, index) => (
                     <li key={index} data-target="#carouselExampleFade" data-slide-to={index} className={index === 0 ? 'active' : ''}></li>

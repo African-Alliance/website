@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/ExploreMore.css';
-import explore from "../assets/explore.jpg"
+import explore from '../assets/Invest in your future_ Secure your future.jpg'
 import { Link } from 'react-router-dom';
 import FadeInSection from './FadeInSection';
 

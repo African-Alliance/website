@@ -37,13 +37,16 @@
 
 
 /* MEDIA RESPONSIVENESS */
+/* big screen */
 @media (min-width: 768px) {
     .paypremium-container {
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .paypremium {
-        border-radius: 20px;
+
+        padding-left: 12rem;
+        padding-right: 12rem;
     }
 }

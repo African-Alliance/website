@@ -35,7 +35,7 @@ const Footer = () => {
               Savings and Investment Products and over the years, African Alliance has estabLinkshed a solid
               reputation for excellent customer service and prompt claims settlement.
             </p>
-            <h5>We Are African AlLinkance Plc</h5>
+            <h5>We Are African Alliance Plc</h5>
           </div>
           <div className='col-md-3 py-4 py-md-1'>
             <h5>Products</h5>
@@ -50,7 +50,7 @@ const Footer = () => {
                   });
                 }}
               ><span>Children Education Plan</span></Link>
-              <Link className='content-item'><span>Group Alliance Income Investment Plan</span></Link>
+              <Link className='content-item'><span>Group Alliance Investment Plan</span></Link>
               <Link className='content-item'
                 to="/investment-special"
                 onClick={() => {
@@ -61,11 +61,56 @@ const Footer = () => {
                   });
                 }}
               ><span>The African Alliance Investment Plus Plan Special</span></Link>
-              <Link className='content-item'><span>The African Alliance Investment Plus Plan</span></Link>
-              <Link className='content-item'><span>The African Alliance Income Investment Plan</span></Link>
-              <Link className='content-item'><span>The African Alliance Term Assurance Plan</span></Link>
-              <Link className='content-item'><span>The African Alliance Money Appreciation Plan</span></Link>
-              <Link className='content-item'><span>The African Alliance Smart Kid Educational Plan</span></Link>
+              <Link className='content-item'
+                to="/alliance-investment-plus"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>The African Alliance Investment Plus Plan</span></Link>
+              <Link className='content-item'
+                to="/income-investment"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>The African Alliance Income Investment Plan</span></Link>
+              <Link className='content-item'
+                to="/term-assurance"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>The African Alliance Term Assurance Plan</span></Link>
+              <Link className='content-item'
+                to="/money-appreciation"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>The African Alliance Money Appreciation Plan</span></Link>
+              <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>The African Alliance Smart Kid Educational Plan</span></Link>
             </div>
           </div>
           <div className='col-md-3 py-4 py-md-1'>

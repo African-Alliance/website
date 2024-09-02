@@ -5,7 +5,7 @@ import '../styles/PayPremium.css';
 const PayPremium = () => {
     return (
         <>
-            <div className="paypremium-container ">
+            <div className="paypremium-container">
                 <div className='paypremium d-flex flex-column justify-content-center flex-md-row justify-content-md-between align-items-md-center'>
                     <div>
                         <h4>Pay Premium Now</h4>

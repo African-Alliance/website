@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 3rem;
+    
 }
 
 .explore-container img {
@@ -32,10 +32,25 @@
 }
 
 /* MOBILE RESPONSIVENESS */
+/* small screen */
 @media (max-width: 768px) {
     .explore-container img {
         width: 100%;
         height: auto; 
         max-width: 100%;
+    }
+
+    .explore-text {
+
+    }
+}
+
+/* big screen */
+@media (min-width: 768px) {
+    .explore-text {
+        padding-right: 10rem;
+    }
+    .explore-container img {
+        height: 100%;
     }
 }

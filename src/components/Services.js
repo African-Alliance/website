@@ -13,7 +13,7 @@ const Services = () => {
                         <p></p>
                     </div>
                 </FadeInSection>
-                <FadeInSection>
+                
                     <div className='service-container d-flex flex-column justify-content-center'>
                         <div className='container d-flex flex-wrap justify-content-around my-1 my-md-3 w-md-75 service-list'>
                             <div className="col-12 col-sm-6 col-md-3">
@@ -37,7 +37,6 @@ const Services = () => {
 
                         </div>
                     </div>
-                </FadeInSection>
             </div>
         </>
     );

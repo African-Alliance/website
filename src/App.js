@@ -3,12 +3,15 @@ import Home from "./pages/Home";
 import ErrorPage from "./pages/ErrorPage";
 import Layout from "./layout/Layout";
 import ChildrenEducation from "./pages/ChildrenEducationPlan";
-import Esusu from "./pages/Esusu";
+import Esusu from "./pages/GroupInvestment";
 import MoneyAppreciation from "./pages/MoneyAppreciationPlan";
 import SmartKidEducation from "./pages/SmartKidEduPlan";
 import AllianceInvestmentPlus from "./pages/AllianceInvestmentPlusPlan";
 import InvestmentSpecialPlan from "./pages/InvestmentSpecialPlan";
 import TempPage from "./pages/TemplatePage";
+import GroupInvestment from "./pages/GroupInvestment";
+import TermAssurance from "./pages/TermAssurance";
+import IncomeInvestment from "./pages/IncomeInvestment";
 
 
 // routing the pages
@@ -27,16 +30,20 @@ const router = createBrowserRouter([
         element: <ChildrenEducation />,
       },
       {
-        path: "/esusu",
-        element: <Esusu />,
+        path: "/group-investment",
+        element: <GroupInvestment />,
       },
       {
         path: "/money-appreciation",
         element: <MoneyAppreciation />,
       },
       {
-        path: "/mortgate-appreciation",
-        element: <MoneyAppreciation />,
+        path: "/term-assurance",
+        element: <TermAssurance />,
+      },
+      {
+        path: "/income-investment",
+        element: <IncomeInvestment />,
       },
       {
         path: "/smart-kid-education",
