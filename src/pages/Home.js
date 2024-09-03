@@ -21,24 +21,7 @@ export default function Home() {
     return (
         < >
             <div id="others">
-                {/* {selectedVideo && (
-                    <div className='home-media'>
-                        <video
-                            className=" w-100 carousel-video"
-                            src={selectedVideo}
-                            alt="safeguarding future from today"
-                            autoPlay
-                            loop
-                            muted
-                            controls={false}
-                            style={{
-                                objectFit: 'cover',
-                                width: '100%',
-                                height: '100vh',
-                            }}
-                        />
-                    </div>
-                )} */}
+
                 <HorizontalScrollSection />
                 {/* <Carousel /> */}
                 <Services />

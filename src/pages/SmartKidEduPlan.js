@@ -33,10 +33,10 @@ export default function SmartKidEducation() {
       ></hr>
       <div className='smart-kid-bullet'>
         <div className='smark-kid-bullet-header'>
-          <h2>
+          <h3>
             A cover for every every child.
-          </h2>
-          <p className='h3'>
+          </h3>
+          <p className='h5'>
             Our Kids Education plan is simplified to these:
           </p>
         </div>
@@ -66,13 +66,13 @@ export default function SmartKidEducation() {
         </ol>
       </div>
       <div className='smart-kid-calculation d-flex flex-column flex-md-row justify-content-around'>
-        <div>
+        <div className='smart-kid-cal-one'>
           <h3>
             Sample Premium Calculation
           </h3>
           <p>Understands how you can calcuate your premium based on the factors, age sum assured and period.</p>
         </div>
-        <div>
+        <div className='smart-kid-cal-two'>
           <table>
             <tr>
               <td>Age (Next Birthday)</td>
@@ -80,7 +80,7 @@ export default function SmartKidEducation() {
             </tr>
             <tr>
               <td>Sum Assured</td>
-              <td>NGN 500,000</td>
+              <td>N500,000</td>
             </tr>
             <tr>
               <td>Duration</td>
@@ -88,40 +88,45 @@ export default function SmartKidEducation() {
             </tr>
             <tr>
               <td>Premium (monthly)</td>
-              <td>NGN 8,210</td>
+              <td>N8,210</td>
             </tr>
           </table>
         </div>
       </div>
       <div className="product-features d-flex flex-column align-items-center">
         <h3 className="col-9 text-center">
-          This section highlights the benefits and features of this plan
+          Whatever the case, We have got you covered
         </h3>
         <div className="container">
           <div className="row gy-5 features-list align-items-center justify-content-center">
             <div className="col-12 col-sm-6 text-center">
               <span className="material-icons md-1rem">volunteer_activism</span>
-              <h3>Confidence</h3>
-              <h6>Avoid loss of money</h6>
-              <p>Easily get all plans sorted</p>
+              <h3>Disability Benefit</h3>
+              
+              <p>In the event of permanent disability of the policyholder during the policy term, the sum assured becomes payable</p>
             </div>
             <div className="col-12 col-sm-6 col-lg-6 text-center">
               <span className="material-icons md-1rem">diversity_1</span>
-              <h3>Ease of Access</h3>
-              <h6>Another</h6>
-              <p>Access</p>
+              <h3>Maturity Benefit</h3>
+              <p>At maturity, the policyholder receives the sum assured. This is payable in four (4) equal annual (yearly) installments from the maturity date.</p>
+              <p>Also, it has the option for the policyholder to receive the full sum assured at Maturity.</p>
             </div>
             <div className="col-12 col-sm-6 text-center">
               <span className="material-icons md-1rem">real_estate_agent</span>
-              <h3>Achieve mortgage dreams</h3>
-              <h6>Another</h6>
-              <p>Access</p>
+              <h3>Death Benefit</h3>
+              <p>In the event of death of the policyholder before maturity, the sum assured becomes payable.</p>
             </div>
             <div className="col-12 col-sm-6 text-center">
               <span className="material-icons md-1rem">diversity_1</span>
-              <h3>Peace of mind</h3>
-              <h6>Another</h6>
-              <p>Wonderfully Access</p>
+              <h3>Surrender Value Benefit</h3>
+              <p>Surrender Value benefit becomes payable in the event that the policyholder 
+                decides to Cancel their policy after two years premium have been paid to date.</p>
+            </div>
+            <div className="col-12 col-sm-6 text-center">
+              <span className="material-icons md-1rem">diversity_1</span>
+              <h3>Waiting Period</h3>
+              <p>There is a six (6) months waiting period during which no benefit is payable 
+                in the event of the death of the policyholder, other than a refund of premium paid.</p>
             </div>
           </div>
         </div>
