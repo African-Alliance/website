@@ -4,6 +4,10 @@ import '../styles/HorizontalScrollSection.css';
 import one from "../assets/testimage.jpg"
 import two from "../assets/testimage2.jpg"
 import three from "../assets/testimage3.jpg"
+import incomeInvestment from '../assets/income investment plan.jpg';
+import groupInvestment from '../assets/group investment.jpg'
+import termAssurance from '../assets/Term Assurance.jpg'
+import termAssurance2 from '../assets/Term Assurance 2.jpg'
 const HorizontalScrollSection = () => {
     const [colors, setColors] = useState({});
     const imgRefs = useRef([]);
@@ -26,19 +30,25 @@ const HorizontalScrollSection = () => {
 
     const slides = [
         {
-            src: one,
+            src: groupInvestment,
             alt: 'First slide',
             label: 'First slide label',
             text: 'Some representative placeholder content for the first slide.',
         },
         {
-            src: two,
+            src: incomeInvestment,
             alt: 'Second slide',
             label: 'Second slide label',
             text: 'Some representative placeholder content for the second slide.',
         },
         {
-            src: three,
+            src: termAssurance,
+            alt: 'Third slide',
+            label: 'Third slide label',
+            text: 'Some representative placeholder content for the third slide.',
+        },
+        {
+            src: termAssurance2,
             alt: 'Third slide',
             label: 'Third slide label',
             text: 'Some representative placeholder content for the third slide.',
@@ -58,6 +68,7 @@ const HorizontalScrollSection = () => {
                         <img
                             ref={el => imgRefs.current[index] = el}
                             className="d-block w-100 carousel-image img-fluid"
+
                             src={slide.src}
                             alt={slide.alt}
                         />

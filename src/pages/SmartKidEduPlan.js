@@ -43,26 +43,55 @@ export default function SmartKidEducation() {
 
         <ol className='smart-kid-list'>
           <li>
-            <h5>Inclusiveness</h5>
+            <h5>Longterm Availability</h5>
             <p>The product is available at a term of 5 to 20 years</p>
           </li>
           <li>
-            <h5>Inclusiveness</h5>
-            <p>The product is available at a term of 5 to 20 years</p>
+            <h5>Wide age range</h5>
+            <p>The age range is between 18 and is 60 years</p>
           </li>
           <li>
-            <h5>Inclusiveness</h5>
-            <p>The product is available at a term of 5 to 20 years</p>
+            <h5>Payment limit</h5>
+            <p>The minimum sum to be assured is N500, 000</p>
           </li>
           <li>
-            <h5>Inclusiveness</h5>
-            <p>The product is available at a term of 5 to 20 years</p>
+            <h5>Cuts across different groups</h5>
+            <p>Open for pupils in levels between Nursery and Tertiary Institutions</p>
           </li>
           <li>
-            <h5>Inclusiveness</h5>
-            <p>The product is available at a term of 5 to 20 years</p>
+            <h5>Contract criteria</h5>
+            <p>Medical examination may be required.
+            </p>
           </li>
         </ol>
+      </div>
+      <div className='smart-kid-calculation d-flex flex-column flex-md-row justify-content-around'>
+        <div>
+          <h3>
+            Sample Premium Calculation
+          </h3>
+          <p>Understands how you can calcuate your premium based on the factors, age sum assured and period.</p>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td>Age (Next Birthday)</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Sum Assured</td>
+              <td>NGN 500,000</td>
+            </tr>
+            <tr>
+              <td>Duration</td>
+              <td>5 years</td>
+            </tr>
+            <tr>
+              <td>Premium (monthly)</td>
+              <td>NGN 8,210</td>
+            </tr>
+          </table>
+        </div>
       </div>
       <div className="product-features d-flex flex-column align-items-center">
         <h3 className="col-9 text-center">

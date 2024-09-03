@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/Home.css';
-// import HorizontalScrollSection from "../components/HorizontalScrollSection";
+import HorizontalScrollSection from "../components/HorizontalScrollSection";
 import ProductSection from '../components/ProductSection';
 import Products from '../components/Products';
 import PayPremium from '../components/PayPremium';
@@ -21,7 +21,7 @@ export default function Home() {
     return (
         < >
             <div id="others">
-                {selectedVideo && (
+                {/* {selectedVideo && (
                     <div className='home-media'>
                         <video
                             className=" w-100 carousel-video"
@@ -38,8 +38,8 @@ export default function Home() {
                             }}
                         />
                     </div>
-                )}
-                {/* <HorizontalScrollSection /> */}
+                )} */}
+                <HorizontalScrollSection />
                 {/* <Carousel /> */}
                 <Services />
                 <ProductSection />

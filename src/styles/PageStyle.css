@@ -76,21 +76,26 @@
 
 .smart-kid-list {
     list-style: none;
-    counter-reset: list-counter; /* Reset the counter for list items */
+    counter-reset: list-counter;
+    /* Reset the counter for list items */
     margin-left: 20px;
     position: relative;
 }
 
 .smart-kid-list li {
-    counter-increment: list-counter; /* Increment the counter for each list item */
+    counter-increment: list-counter;
+    /* Increment the counter for each list item */
     position: relative;
-    padding-left: 40px; /* Space for the number and line */
+    padding-left: 40px;
+    /* Space for the number and line */
     padding-bottom: 20px;
-    margin-bottom: 20px; /* Vertical space between items */
+    margin-bottom: 20px;
+    /* Vertical space between items */
 }
 
 .smart-kid-list li:before {
-    content: counter(list-counter); /* Use the counter value */
+    content: counter(list-counter);
+    /* Use the counter value */
     background-color: #1b3271;
     color: white;
     font-weight: bold;
@@ -108,11 +113,14 @@
 .smart-kid-list li:after {
     content: '';
     position: absolute;
-    left: 12px; /* Align with the center of the circle */
+    left: 12px;
+    /* Align with the center of the circle */
     top: 30px;
-    bottom: -40px; /* Adjust to cover the space to the next item */
+    bottom: -40px;
+    /* Adjust to cover the space to the next item */
     width: 4px;
-    background-color: #1b3271; /* Same color as the circle */
+    background-color: #1b3271;
+    /* Same color as the circle */
 }
 
 /* Remove the vertical line for the last item */
@@ -131,14 +139,32 @@
 .smart-kid-bullet {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
+
 }
 
 .smark-kid-bullet-header h2 {
     font-weight: bold;
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border: none;
+}
+
+tr:nth-child(odd) {
+    background-color: #dddddd;
 }
 
 /* MOBILE RESPONSIVENESS */
@@ -149,8 +175,10 @@
     }
 
     .smart-kid-list li {
-        padding-left: 30px; /* Reduce space for smaller screens */
-        margin-bottom: 15px; /* Reduce vertical space for smaller screens */
+        padding-left: 30px;
+        /* Reduce space for smaller screens */
+        margin-bottom: 15px;
+        /* Reduce vertical space for smaller screens */
     }
 
     .smart-kid-list li:before {
@@ -160,8 +188,10 @@
     }
 
     .smart-kid-list li:after {
-        left: 9px; /* Adjust the line to match the smaller circle */
+        left: 9px;
+        /* Adjust the line to match the smaller circle */
         top: 25px;
-        bottom: -30px; /* Adjust to cover the space to the next item */
+        bottom: -30px;
+        /* Adjust to cover the space to the next item */
     }
 }
