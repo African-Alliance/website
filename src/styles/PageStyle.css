@@ -7,9 +7,6 @@
     height: 70vh;
 }
 
-/*👉.product-content {
-
-}👈*/
 
 .intro-header h3 {
     color: #1b3271;
@@ -17,6 +14,11 @@
 
 .intro-bar {
     border-left: 5px solid #1b3271;
+}
+
+.product-content {
+    width: 70%;
+    margin: 0 auto;
 }
 
 .product-link {
@@ -54,7 +56,8 @@
     font-weight: bold;
 }
 
-.features-list p, .features-list h3 {
+.features-list p,
+.features-list h3 {
     text-align: start;
 }
 
@@ -76,6 +79,66 @@
     line-height: 55px;
 }
 
+.feature-card {
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .feature-card .material-icons {
+    font-size: 2.5rem;
+    color: #1b3271;
+  }
+  
+
+.feature-section {
+    padding: 0 5rem; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 20rem;
+}
+
+.feature-header {
+    display: flex;
+    justify-content: end;
+}
+
+.feature-header h2 {
+    text-align: start;
+    color: #1b3271;
+    font-size: 2.5rem;
+}
+  
+
+.feature-card {
+    border: 1px solid #1b3271;
+    border-bottom: 8px solid #1b3271;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    margin-left: 1.5rem;
+    height: 21rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card p {
+    text-wrap: wrap;
+}
+
+.feature-card .material-icons {
+    border: 2px solid #1b3271;
+    border-radius: 10rem;
+    padding: 1rem;
+    font-size: 2.5rem;
+    color: #1b3271;
+}
+
 
 .smart-kid-list {
     list-style: none;
@@ -89,7 +152,7 @@
     counter-increment: list-counter;
     /* Increment the counter for each list item */
     position: relative;
-    padding-left: 40px;
+    padding-left: 3rem;
     /* Space for the number and line */
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -143,7 +206,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10rem;
+    padding-left: 15rem;
 }
 
 .smark-kid-bullet-header h2 {
@@ -151,10 +214,12 @@
 }
 
 .smart-kid-calculation {
-    padding-left: 10rem;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.smart-kid-cal-one, .smart-kid-cal-two {
+.smart-kid-cal-one,
+.smart-kid-cal-two {
     width: 50%;
     text-wrap: wrap;
 }
@@ -164,7 +229,8 @@
     flex-direction: column;
 }
 
-.smart-kid-cal-one p, .smart-kid-cal-one h3 {
+.smart-kid-cal-one p,
+.smart-kid-cal-one h3 {
     width: 50%;
     text-wrap: wrap;
     text-align: start;
@@ -190,9 +256,90 @@ tr:nth-child(odd) {
     background-color: #dddddd;
 }
 
+
+
+.contact-badge {
+    position: relative;
+    margin: 2rem 0 0 0;
+    height: 15rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('../assets/explore.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.contact-badge-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-badge-customer-care {
+    background-color: #1b3271;
+    color: white;
+    min-height: 6rem;
+}
+
+.contact-badge-right {
+    background: rgba(27, 50, 113, 0.8); /* Apply a semi-transparent background */
+    padding: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.badge-span {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.badge-link {
+    text-decoration: none;
+    width: 30%;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.9rem;
+    background-color: inherit;
+    padding: 0.6rem 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.badge-link:hover {
+    text-decoration: none;
+    color: #1b3271;
+    border: 2px solid white;
+    border-radius: 0.9rem;
+    background-color: white;
+    padding: 0.4rem 0;
+}
+
+.material-icons {
+    font-size: inherit;
+    margin-right: 5px;
+}
+
 /* MOBILE RESPONSIVENESS */
-/* mobile screens */
+/* tablets devices */
 @media (max-width: 768px) {
+
+    .product-content {
+        width: 100%;
+        margin: 0 auto;
+    }
     .smart-kid-list {
         margin-left: 0px;
     }
@@ -227,7 +374,40 @@ tr:nth-child(odd) {
     }
 
     .smart-kid-calculation {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .badge-link {
+        width: 50%;
+    }
+
+    .feature-card {
+        margin: 0 auto;
+    }
+    .feature-card {
+        border: 1px solid #1b3271;
+        border-bottom: 0.5rem solid #1b3271;
+        padding: 1rem;
+        margin-bottom: 1.5rem;
+        height: 21rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+/* MOBILE RESPONSIVENESS */
+/* mobile devices */
+@media (max-width: 480px) {
+
+    .badge-link {
+        width: 80%;
     }
 }
+
