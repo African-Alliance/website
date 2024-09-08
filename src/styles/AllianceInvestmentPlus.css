@@ -1,0 +1,59 @@
+
+
+.investment-container img {
+    width: 50%;
+    height: auto; 
+    max-width: 100%;
+}
+
+
+.investment-container h3 {
+    margin: 0;
+    color: #1b3271;
+}
+
+.investment-container p, .investment-container h3 {
+    width: 100%;
+}
+
+.investment-btn {
+    background-color: #1b3271;
+    color: #fff;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 0;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* MOBILE RESPONSIVENESS */
+/* small screen */
+@media (max-width: 768px) {
+    .investment-container img {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+/* big screen */
+@media (min-width: 768px) {
+    .investment-text {
+        padding-right: 8rem;
+    }
+
+    .investment-container img {
+        max-height: 50vh;
+        width: 100%;
+    }
+
+    .investment-container {
+        margin: 0 auto;
+    }
+
+    .investment-text {
+        padding-right: 8rem;
+    }
+}

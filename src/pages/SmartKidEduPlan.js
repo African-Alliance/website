@@ -7,7 +7,7 @@ import smartKid from '../assets/smart kid education plan.jpg';
 
 export default function SmartKidEducation() {
   return (
-    <div className='smart-kid-container'>
+    <div className='intro-container'>
       <div className="banner-image">
         <img src={banner} alt="investmentspecial" />
       </div>
