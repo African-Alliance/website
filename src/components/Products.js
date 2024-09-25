@@ -20,7 +20,7 @@ const Products = () => {
 
                     {/* Section header */}
                     <FadeInSection>
-                        <div className="text-center feature-header pb-4 pb-md-5">
+                        <div className="text-center feature-header d-flex flex-column align-items-center pb-4 pb-md-5">
                             <h2 className="h2 mb-4">Basket of Our Product Plans</h2>
                             <p className="text-xl text-muted">Secure your future; Invest in your future. Our array of insurance plans is just what is needed for you and family.</p>
                         </div>

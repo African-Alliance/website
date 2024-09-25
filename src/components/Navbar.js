@@ -115,14 +115,13 @@ const Navbar = () => {
                                                             </Link></a>
                                                         </li>
                                                         <li className="nav-item"><a href="#" className="nav-link text-small pb-0">
-                                                            <Link className="navbar-link" to="#">
+                                                            <Link className="navbar-link" to="/group-investment">
                                                                 Group Alliance Income Investment Plan (GAIIP)
                                                             </Link></a></li>
                                                         <li className="nav-item"><a href="#" className="nav-link text-small pb-0">
-                                                            <Link className="navbar-link" to="#">
+                                                            <Link className="navbar-link" to="/income-investment">
                                                                 Alliance Income Investment Plan
                                                             </Link></a></li>
-
                                                     </ul>
                                                 </div>
                                                 <div className="col-sm-6 col-lg-3 mb-4">

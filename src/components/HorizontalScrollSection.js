@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react';
 import ColorThief from 'colorthief';
 import '../styles/HorizontalScrollSection.css';
-import one from "../assets/testimage.jpg"
-import two from "../assets/testimage2.jpg"
-import three from "../assets/testimage3.jpg"
 import incomeInvestment from '../assets/income investment plan.jpg';
 import groupInvestment from '../assets/group investment.jpg'
 import termAssurance from '../assets/Term Assurance.jpg'
 import termAssurance2 from '../assets/Term Assurance 2.jpg'
+import videoOne from "../assets/SLider 1.mp4";
+import videoTwo from "../assets/Slider 2.mp4"
 const HorizontalScrollSection = () => {
     const [colors, setColors] = useState({});
     const imgRefs = useRef([]);
@@ -55,36 +54,72 @@ const HorizontalScrollSection = () => {
         },
     ];
 
+    const videoSlides = [
+        videoOne,
+        videoTwo
+    ]
+
     return (
-        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
-            <ol className="carousel-indicators">
-                {slides.map((_, index) => (
-                    <li key={index} data-target="#carouselExampleFade" data-slide-to={index} className={index === 0 ? 'active' : ''}></li>
-                ))}
-            </ol>
-            <div className="carousel-inner">
-                {slides.map((slide, index) => (
-                    <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                        <img
-                            ref={el => imgRefs.current[index] = el}
-                            className="d-block w-100 carousel-image img-fluid"
 
-                            src={slide.src}
-                            alt={slide.alt}
-                        />
+        <>
+            <div id="carouselExampleFade" className="carousel slide carousel-fade d-md-none" data-ride="carousel" data-interval="3000">
+                <ol className="carousel-indicators">
+                    {slides.map((_, index) => (
+                        <li key={index} data-target="#carouselExampleFade" data-slide-to={index} className={index === 0 ? 'active' : ''}></li>
+                    ))}
+                </ol>
+                <div className="carousel-inner">
+                    {slides.map((slide, index) => (
+                        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                            <img
+                                ref={el => imgRefs.current[index] = el}
+                                className="d-block w-100 carousel-image img-fluid"
 
-                    </div>
-                ))}
+                                src={slide.src}
+                                alt={slide.alt}
+                            />
+
+                        </div>
+                    ))}
+                </div>
+                <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-            </a>
-        </div>
+
+
+            <div id="videoCarousel" className="carousel slide d-none d-md-block" style={{'height': '70vh'}} data-ride="carousel" data-interval="5000">
+                <ol className="carousel-indicators">
+                    {videoSlides.map((_, index) => (
+                        <li key={index} data-target="#videoCarousel" data-slide-to={index} className={index === 0 ? 'active' : ''}></li>
+                    ))}
+                </ol>
+                <div className="carousel-inner h-100">
+                    {videoSlides.map((slide, index) => (
+                        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                            <video className="d-block w-100" autoPlay muted loop>
+                                <source src={slide} type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+
+                        </div>
+                    ))}
+                </div>
+                <a className="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
+            </div>
+        </>
     );
 };
 

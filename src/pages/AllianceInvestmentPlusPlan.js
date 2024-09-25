@@ -7,7 +7,6 @@ import graphic from '../assets/explore.jpg'
 export default function AllianceInvestmentPlus() {
   return (
     <>
-
       <div className='intro-container'>
         <div className="banner-image">
           <img src={banner} alt="investmentspecial" />
@@ -34,9 +33,9 @@ export default function AllianceInvestmentPlus() {
           style={{ backgroundColor: '#1b3271' }}
         ></hr>
 
-        <div className="investment-container d-flex flex-column align-items-md-start flex-md-row col-md-9 my-3 pt-md-4 my-md-5 align-items-center justify-content-start">
+        <div className="investment-container d-flex flex-column align-items-md-start flex-lg-row col-md-9 my-3 pt-md-4 my-md-5 align-items-center justify-content-start">
           <img src={graphic} alt='product' />
-          <div className='investment-text d-flex flex-column justify-content-between mt-3 mt-md-5 mx-2 mx-md-auto'>
+          <div className='investment-text d-flex flex-column justify-content-between mt-3 mt-md-5 mx-2 mx-sm-4 mx-md-auto'>
             <h3 className='text-left text-md-right col-12 px-4 px-md-0 d-flex align-items-center justify-content-start justify-content-md-start'>
               Why Investment Plus?
 
@@ -45,7 +44,7 @@ export default function AllianceInvestmentPlus() {
                 className="my-2 mt-3 mt-md-5 mx-2 mx-md-auto p-5 ml-4 mr-5"
                 style={{ backgroundColor: '#1b3271' }}
               ></hr> */}
-            <div className="col-12  px-4 px-md-0">
+            <div className="col-12 px-md-0">
               <p className='my-2 my-md-3 w-100 '>The African Alliance Investment Plus Plan provides you with an added advantage over
                 saving your money in a bank you earn a significant amount of interest and enjoy an additional life cover up to N1,000,000 whilst ensuring that this amount
                 is sent to whomever you nominate if you pass away during the investment period, whether the insurance term is complete or not.

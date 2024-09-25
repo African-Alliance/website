@@ -41,7 +41,7 @@
 /* big screen */
 @media (min-width: 768px) {
     .investment-text {
-        padding-right: 8rem;
+        padding-right: 2rem;
     }
 
     .investment-container img {
@@ -53,7 +53,4 @@
         margin: 0 auto;
     }
 
-    .investment-text {
-        padding-right: 8rem;
-    }
 }

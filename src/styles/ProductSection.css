@@ -1,10 +1,10 @@
-.contact-badge {
+.home-badge {
     background-color: #1b3271;
     color: white;
     font-size: 1.1rem;
 }
 
-.badge-link {
+.home-badge-link {
     width: 10rem;
     text-decoration: none;
     color: white;
@@ -14,7 +14,7 @@
     padding: 0.7rem;
 }
 
-.badge-link:hover {
+.home-badge-link:hover {
     text-decoration: none;
     color: #1b3271;
     border: 2px solid white;
@@ -23,6 +23,6 @@
     padding: 0.7rem;
 }
 
-.badge-span {
+.home-badge-span {
     font-weight: bolder;
 }
