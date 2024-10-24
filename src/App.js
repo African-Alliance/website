@@ -11,6 +11,8 @@ import TempPage from "./pages/TemplatePage";
 import GroupInvestment from "./pages/GroupInvestment";
 import TermAssurance from "./pages/TermAssurance";
 import IncomeInvestment from "./pages/IncomeInvestment";
+import Board from "./pages/BoardMembers";
+import Management from "./pages/ManagementTeam";
 
 
 // routing the pages
@@ -59,6 +61,14 @@ const router = createBrowserRouter([
       {
         path: "/temp-page",
         element: <TempPage/>,
+      },
+      {
+        path: "/our-board",
+        element: <Board />,
+      },
+      {
+        path: "/management",
+        element: <Management />,
       },
       {
         path: "*",

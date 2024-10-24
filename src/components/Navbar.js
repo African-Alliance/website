@@ -191,18 +191,14 @@ const Navbar = () => {
                                                     <h6 className="font-weight-bold text-uppercase">Our Team</h6>
                                                     <ul className="list-unstyled">
                                                         <li className="nav-item"><a href="#" className="nav-link text-small pb-0">
-                                                            <Link className="navbar-link" to="#">
+                                                            <Link className="navbar-link" to="/our-board">
                                                                 Our Board
                                                             </Link></a></li>
                                                         <li className="nav-item"><a href="#" className="nav-link text-small pb-0">
-                                                            <Link className="navbar-link" to="#">
+                                                            <Link className="navbar-link" to="/management">
                                                                 Our Management Team
                                                             </Link></a>
                                                         </li>
-                                                        <li className="nav-item"><a href="#" className="nav-link text-small pb-0">
-                                                            <Link className="navbar-link" to="#">
-                                                                Alliance Income Investment Plan
-                                                            </Link></a></li>
                                                     </ul>
                                                 </div>
                                             </div>

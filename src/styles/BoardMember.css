@@ -1,0 +1,132 @@
+.board-banner {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.board-header-text {
+
+}
+  
+  .board-header-text h1 {
+    margin-top: 0.2rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
+  }
+
+.board-header-text p {
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    letter-spacing: 0.5rem;
+}
+
+.board-cards {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+}
+
+.board-cards .card {
+    border: none;
+    margin-top: 2rem;
+    min-height: 20rem;
+    cursor: pointer;
+}
+
+/* .card:hover .card-body {
+    background-color: #1b3271;
+    color: #fff;
+} */
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.image-container {
+    position: relative;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 255, 0.1); /* Transparent blue */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover .image-overlay {
+    opacity: 1;
+}
+
+
+
+
+/* jdfhdjfkfij */
+
+.board-cards .card img {
+    height: 100%;
+}
+
+.board-cards .card-body {
+    padding: 5px 0;
+}
+
+.card-body p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+}
+
+/* OFFCANVAS */
+.offcanvas-body p {
+    line-height: 1.5;
+    color: #dedede;
+}
+
+#chairman, #nonExecutive, #independentDir1, #independentDir2, #finance, #abuja, #marketing, #admin, #hcm  {
+    background-color: #1b3271;
+    width: 50%;
+    color: #fff;
+}
+
+.offcanvas .offcanvas-title {
+
+    color: #fff;
+}
+
+.offcanvas-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    
+    margin: 0 auto;
+}
+
+.offcanvas-image img {
+    height: 400px;
+}
