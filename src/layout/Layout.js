@@ -9,14 +9,14 @@ import Header from "../components/Header";
 
 export default function Layout() {
   return (
-    <div>
-      <Navbar />
-      {/* <Header /> */}
-      <main style={{paddingTop: '4rem'}}>
+    <>
+      {/* <Navbar /> */}
+      <Header />
+      <main >
         <Outlet />
       </main>
       <Footer />
-    </div>
+    </>
   );
 };
 

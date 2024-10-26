@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../assets/AAI_Logo.png';
 import $ from 'jquery'; // Assuming you have jQuery installed
 import '../styles/Navbar.css';
-// import logo from "../assets/AAI_Logo.png"
 
 const Navbar = () => {
 
@@ -50,7 +50,7 @@ const Navbar = () => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-dark py-3 shadow-sm fixed-top ${scrolled ? 'navbar-scrolled' : ''}`}>
             <Link to="/" className="navbar-logo">
-                <img className='img-fluid' src='' alt="logo" />
+            <img src={Logo} alt="logo" id="header_logo" />
             </Link>
             <button
                 className="navbar-toggler order-md-1"

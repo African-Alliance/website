@@ -1,176 +1,139 @@
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/AAI_Logo.png';
 import '../styles/Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
+  const [expandedDropdown, setExpandedDropdown] = useState(null);
+  const closeButtonRef = useRef(null);
+
+  const toggleDropdown = (index) => {
+    setExpandedDropdown(expandedDropdown === index ? null : index);
+  };
+
+  // Close the off-canvas
+  const handleCloseOffcanvas = () => {
+    if (closeButtonRef.current) {
+      closeButtonRef.current.click(); // Trigger a click on the close button
+    }
+  };
+
   return (
-    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-1 border-bottom">
-      <div className="container wrapperStyle">
-        <Link
-          to="/"
-          class="d-flex align-items-center col-md-2 mb-2 mb-md-0 text-dark text-decoration-none"
-        >
+    <nav className="navbar navbar-expand-md bg-body-tertiary">
+      <div className="container-fluid">
+        <Link to="/" className="navbar-brand">
           <img src={Logo} alt="logo" id="header_logo" />
         </Link>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div
+          className="offcanvas offcanvas-end"
+          tabIndex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div className="offcanvas-header">
+            <button
+              type="button"
+              className="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+              ref={closeButtonRef}
+            ></button>
+          </div>
+          <div className="offcanvas-body">
+            <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li className="nav-item">
+                <Link className="nav-link" aria-current="page" onClick={handleCloseOffcanvas} to="/">
+                  HOME
+                </Link>
+              </li>
 
-        <div className="menuDesktopStyle">
-          <ul
-            class="nav col-12 col-md-auto mb-2 mb-md-0 justify-content-center"
-            id="navLinks"
-          >
-            <li class="nav-item" id="menuItem">
-              <Link to="#" class="nav-link firstLevelLink">
-                Product and Services
-              </Link>
-              <div class="subMenuStyle">
-                <div class="subNavBlock">
-                  <span class="subMenuTitle subNavMenuTitle">Insure</span>
-                  <ul class="subItemsWraper subNavItemsWraper">
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="/children-education">
-                        Children Education Plan (CEP)
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="/money-appreciation">
-                        Money Appreciation Plan (MAP)
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="/smart-kid-education">
-                        Alliance Smart Kid Educational Plan (ASK)
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div class="subNavBlock">
-                  <span class="subMenuTitle subNavMenuTitle">Invest</span>
-                  <ul class="subItemsWraper subNavItemsWraper">
-                    <li class="subMenuItemStyle">
-                      <Link
-                        class="subMenuLinkStyle"
-                        to="alliance-investment-plus"
-                      >
-                        Alliance Investment Plus Plan (AIP)
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Group Alliance Income Investment Plan (GAIIP)
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Alliance Income Investment Plan
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item" id="menuItem">
-              <Link to="#" class="nav-link firstLevelLink">
-                About AAI
-              </Link>
-              <div class="subMenuStyle">
-                <div class="subNavBlock">
-                  <span class="subMenuTitle subNavMenuTitle">About Us</span>
-                  <ul class="subItemsWraper subNavItemsWraper">
-                    <li class="subMenuItemStyle">
-                    <Link class="subMenuLinkStyle" to="#">
-                        Who We Are
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Mission & Vision
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Our Values
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-                <div class="subNavBlock">
-                  <span class="subMenuTitle subNavMenuTitle">Our Team</span>
-                  <ul class="subItemsWraper subNavItemsWraper">
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Our Board
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Our Management Team
-                      </Link>
-                    </li>
-                    <li class="subMenuItemStyle">
-                      <Link class="subMenuLinkStyle" to="#">
-                        Alliance Income Investment Plan
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-            <li class="nav-item" id="menuItem">
-              <Link to="#" class="nav-link firstLevelLink">
-                Careers
-              </Link>
-            </li>
-            <li class="nav-item" id="menuItem">
-              <Link to="#" class="nav-link firstLevelLink">
-                Contact Us
-              </Link>
-            </li>
-          </ul>
-        </div>
+              {/* PRODUCT Dropdown */}
+              <li className="nav-item">
+                <a
+                  className="nav-link d-flex align-items-center"
+                  href="#"
+                  onClick={() => toggleDropdown(0)}
+                  role="button"
+                  aria-expanded={expandedDropdown === 0}
+                >
+                  PRODUCT
+                  <FontAwesomeIcon icon={expandedDropdown === 0 ? faMinus : faPlus} className="ms-2" />
+                </a>
+                <ul
+                  className={`dropdown-menu ${expandedDropdown === 0 ? 'show' : 'd-none'}`}
+                >
+                  <li><Link className="dropdown-item" to="/children-education" onClick={handleCloseOffcanvas}>CHILDREN EDUCATION</Link></li>
+                  <li><Link className="dropdown-item" to="/money-appreciation" onClick={handleCloseOffcanvas}>MONEY APPRECIATION</Link></li>
+                  <li><Link className="dropdown-item" to="/smart-kid-education" onClick={handleCloseOffcanvas}>SMART KID EDUCATIONAL</Link></li>
+                  <li><Link className="dropdown-item" to="/alliance-investment-plus" onClick={handleCloseOffcanvas}>INVESTMENT PLUS</Link></li>
+                  <li><Link className="dropdown-item" to="/investment-special" onClick={handleCloseOffcanvas}>INVESTMENT PLUS SPECIAL</Link></li>
+                  <li><Link className="dropdown-item" to="/group-investment" onClick={handleCloseOffcanvas}>GROUP INCOME INVESTMENT</Link></li>
+                  <li><Link className="dropdown-item" to="/income-investment" onClick={handleCloseOffcanvas}>INCOME INVESTMENT</Link></li>
+                </ul>
+              </li>
 
-        <div class="menuButtonStyle">
-          <input type="checkbox" id="check"/>
-          <label for="check" className="hamburger mb-0">
-            <FontAwesomeIcon icon={faBars} size="2x"/>
-          </label>
-          <label for="check" className="x-mark mb-0">
-            <FontAwesomeIcon icon={faXmark} size="2x" />
-          </label>
+              {/* SELF SERVICE Dropdown */}
+              <li className="nav-item">
+                <a
+                  className="nav-link d-flex align-items-center"
+                  href="#"
+                  onClick={() => toggleDropdown(1)}
+                  role="button"
+                  aria-expanded={expandedDropdown === 1}
+                >
+                  SELF SERVICE
+                  <FontAwesomeIcon icon={expandedDropdown === 1 ? faMinus : faPlus} className="ms-2" />
+                </a>
+                <ul
+                  className={`dropdown-menu ${expandedDropdown === 1 ? 'show' : 'd-none'}`}
+                >
+                  <li><Link className="dropdown-item" to="/premium-payment" onClick={handleCloseOffcanvas}>PREMIUM PAYMENT</Link></li>
+                  <li><Link className="dropdown-item" to="/verify-annuity" onClick={handleCloseOffcanvas}>VERIFY ANNUITY</Link></li>
+                  <li><Link className="dropdown-item" to="/calculate-premium" onClick={handleCloseOffcanvas}>CALCULATE PREMIUM</Link></li>
+                  <li><Link className="dropdown-item" to="/download-form" onClick={handleCloseOffcanvas}>DOWNLOAD FORM</Link></li>
+                </ul>
+              </li>
 
-          <div class="menuMobileStyle">
-          <div>
-            <ul>
-              <li class="menuItemStyle">
-                <Link class="menuLinkStyle">Health</Link>
-                <div class="subMenuStyle">
-                  <div class="menuItemStyle">
-                    <span class="menuLinkStyle subMenuTitle">
-                      Health Insurance
-                    </span>
-                    <ul>
-                      <li class="menuItemStyle">
-                        <Link class="menuLinkStyle">Health Plans</Link>
-                      </li>
-                      <li class="menuItemStyle">
-                        <Link class="menuLinkStyle">EasyCare</Link>
-                      </li>
-                      <li class="menuItemStyle">
-                        <Link class="menuLinkStyle">
-                          International Health Plan
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
+              {/* ABOUT US Dropdown */}
+              <li className="nav-item">
+                <a
+                  className="nav-link d-flex align-items-center"
+                  href="#"
+                  onClick={() => toggleDropdown(2)}
+                  role="button"
+                  aria-expanded={expandedDropdown === 2}
+                >
+                  ABOUT US
+                  <FontAwesomeIcon icon={expandedDropdown === 2 ? faMinus : faPlus} className="ms-2" />
+                </a>
+                <ul
+                  className={`dropdown-menu ${expandedDropdown === 2 ? 'show' : 'd-none'}`}
+                >
+                  <li><Link className="dropdown-item" to="/who-we-are" onClick={handleCloseOffcanvas}>WHO WE ARE</Link></li>
+                  <li><Link className="dropdown-item" to="/management-team" onClick={handleCloseOffcanvas}>MANAGEMENT TEAM</Link></li>
+                  <li><Link className="dropdown-item" to="/board-of-directors" onClick={handleCloseOffcanvas}>BOARD OF DIRECTORS</Link></li>
+                </ul>
+              </li>
+
+              <li className="nav-item">
+                <Link className="nav-link" to="/contact" onClick={handleCloseOffcanvas}>CONTACT US</Link>
               </li>
             </ul>
           </div>
         </div>
-        </div>
       </div>
-    </header>
+    </nav>
   );
 }

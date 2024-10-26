@@ -2,214 +2,136 @@
   height: 58px;
 }
 
-#menuItem {
-  padding: 0px 20px;
+/* overide the bootstrap dropdown arrow */
+.navbar .dropdown-toggle::after {
+  display: none !important;
 }
 
-.wrapperStyle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  position: static;
+
+.offcanvas {
+  background-color: rgba(27, 50, 113, 0.7);
+  backdrop-filter: blur(5px); 
+  /* background-image: url('https://www.africanallianceplc.com/assets/team/img/Chairman.png'); Replace with your background image path */
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.menuDesktopStyle {
-  display: block;
+
+.offcanvas-header .btn-close {
+  filter: invert(1); /* Ensures close button is visible on light background */
 }
 
-@media (min-width: 992px) {
-  .menuMobileStyle {
-    min-height: 100vh;
-    width: 100%;
-    display: none;
-  }
-}
 
-@media (max-width: 768px) {
-  .menuDesktopStyle {
-    display: none;
-  }
-  .menuMobileStyle {
-    width: 50%;
-  }
-}
-
-@media (min-width: 768px) {
-  .menuButtonStyle {
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s ease, opacity 0.2s ease;
-  }
-}
-
-.menuMobileStyle {
-  position: fixed;
-  z-index: 5;
-  top: 120px;
-  bottom: 0;
-  right: 0;
-  margin-top: 1px;
-  background-color: #fff;
-  transform: translate3d(100%, 0, 0);
-  transition: transform 0.2s ease;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.menuMobileStyle > div {
-  position: relative;
-}
-
-.menuButtonStyle {
-    position: relative;
-}
-
-.menuButtonStyle input {
-  display: block;
-  width: 28px;
-  height: 32px;
-  position: absolute;
-  cursor: pointer;
+.dropdown-menu {
+  display: none;
   opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  background-color: inherit;
+  border: none;
+  color: inherit
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: scaleY(1);
+  display: block;
+}
+
+
+/* Navbar Styling */
+.navbar {
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar .nav-link {
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: inherit;
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+  padding: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: top;
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.dropdown-item, .nav-link {
+  padding: 12px 0 20px 20px;
+  color: #fff;
+  font-size: 9px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-wrap: wrap;
+}
+
+.dropdown-item:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Icon Styling */
+.nav-link .fa-plus, .nav-link .fa-minus {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover .fa-plus,
+.nav-link:hover .fa-minus {
+  transform: rotate(90deg);
+}
+
+/* Offcanvas Styling */
+.offcanvas-body {
+  color: #fff;
+  padding: 10px 5px 5px;
+  background-image: url('../assets/AAI_Logo.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  margin: 0 15px 15px;
+  border-radius: 20px;
+}
+
+.offcanvas-body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(27, 50, 113, 0.9); /* Overlay color */
+  z-index: 1;
+}
+
+.offcanvas-body * {
+  position: relative;
   z-index: 2;
 }
 
-.menuButtonStyle .x-mark {
-    width: 28px;
-    height: 32px;
-    position: absolute;
-    cursor: pointer;
-    opacity: 0;
-    z-index: 3;
-}
 
-.menuButtonStyle #check:checked ~ .menuMobileStyle {
-  display: block;
-  transform: none;
-}
-
-.menuButtonStyle #check:checked ~ .x-mark {
-    opacity: 1;
+@media (min-width: 480px) {
+  .nav-link, .dropdown-item {
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
-
-.menuButtonStyle #check:checked ~ .hamburger {
-    opacity: 0;
-  }
-
-.subMenuStyle {
-  z-index: 5;
-  width: 100%;
-  left: 0;
-  display: flex;
-  position: absolute;
-  background-color: #fff;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0px;
-  box-shadow: 1px 10px 20px -5px rgba(0, 0, 0, 0.3);
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s ease 0.3s opacity 0.2s ease 0.1s;
-}
-
-#menuItem:hover .subMenuStyle {
-  visibility: visible;
-  opacity: 1;
-  transition: visibility 0s ease 0s opacity 0.2s ease;
-}
-
-/* header #navLinks #menuItem:hover + span.stroke {
-    visibility: visible;
-    opacity: 1;
-    width: 60px;
-    transition: visibility 0s ease 0s opacity .2s ease;
-} */
-
-.subMenuItemStyle {
-  margin-right: 45px;
-}
-
-.subNavBlock {
-  padding-left: 30px;
-  border-left: 1px solid #e5e5e5;
-}
-
-.subNavBlock:first-child {
-  border-left: 0 none;
-}
-
-.subMenuTitle.subNavMenuTitle {
-  display: block;
-  width: auto;
-  padding-right: 0;
-  text-align: left;
-  margin-bottom: 15px;
-}
-
-.subItemsWraper.subNavItemsWraper {
-  border-left: 0 none;
-  padding-left: 0;
-  max-height: auto;
-}
-
-.subMenuTitle {
-  width: 50%;
-  font-size: 24px;
-  font-weight: 700;
-  color: #002f6c;
-  text-transform: uppercase;
-  text-align: right;
-  padding-right: 65px;
-}
-
-.subItemsWraper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 45px;
-  list-style: none;
-  border-left: 1px solid #e5e5e5;
-}
-
-.subMenuLinkStyle {
-  display: block;
-  padding: 7px 0px;
-  text-transform: none;
-  text-decoration: none;
-  color: #436ba0;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 23px;
-}
-
-/* .stroke {
-    display: block;
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 4px;
-    background: #f07662;
-    transform: translate3d(0, 0, 0);
-    visibility: hidden;
-    transition: transform .2s ease, width .2s ease, visibility 0s ease .2s;
-} */
-
-.firstLevelLink {
-  display: flex;
-  padding: 0 5px;
-  margin: 0 5px;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #00008f;
-  font-weight: 600;
-  font-size: 13px;
-  letter-spacing: 0.1em;
-  transition: color 0.2s ease-out, font-weight 0.2s ease-out;
 }
