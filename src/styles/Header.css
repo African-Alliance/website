@@ -2,6 +2,10 @@
   height: 58px;
 }
 
+#navbar {
+  background-color: #fff;
+}
+
 /* overide the bootstrap dropdown arrow */
 .navbar .dropdown-toggle::after {
   display: none !important;
@@ -10,16 +14,17 @@
 
 .offcanvas {
   background-color: rgba(27, 50, 113, 0.7);
-  backdrop-filter: blur(5px); 
+  backdrop-filter: blur(5px);
   /* background-image: url('https://www.africanallianceplc.com/assets/team/img/Chairman.png'); Replace with your background image path */
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 
 .offcanvas-header .btn-close {
-  filter: invert(1); /* Ensures close button is visible on light background */
+  filter: invert(1);
+  /* Ensures close button is visible on light background */
 }
 
 
@@ -44,6 +49,7 @@
 /* Navbar Styling */
 .navbar {
   font-family: 'Arial', sans-serif;
+  padding: 0 1.5rem;
 }
 
 .navbar .nav-link {
@@ -71,7 +77,8 @@
   transform: scaleY(1);
 }
 
-.dropdown-item, .nav-link {
+.dropdown-item,
+.nav-link {
   padding: 12px 0 20px 20px;
   color: #fff;
   font-size: 9px;
@@ -86,7 +93,8 @@
 }
 
 /* Icon Styling */
-.nav-link .fa-plus, .nav-link .fa-minus {
+.nav-link .fa-plus,
+.nav-link .fa-minus {
   font-size: 12px;
   margin-left: 5px;
   transition: transform 0.3s ease;
@@ -116,7 +124,8 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(27, 50, 113, 0.9); /* Overlay color */
+  background-color: rgba(27, 50, 113, 0.9);
+  /* Overlay color */
   z-index: 1;
 }
 
@@ -127,7 +136,9 @@
 
 
 @media (min-width: 480px) {
-  .nav-link, .dropdown-item {
+
+  .nav-link,
+  .dropdown-item {
     padding: 12px 20px;
     color: #fff;
     font-size: 12px;
@@ -135,3 +146,91 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
+
+/* Navbar styling for screens ≥768px */
+@media (min-width: 768px) {
+  /* Navbar background */
+  .navbar {
+    font-family: 'Arial', sans-serif;
+    padding: 0 10rem;
+  }
+
+  /* Nav link styling */
+  .navbar .nav-link {
+    color: #1b3271 !important;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+
+  /* Remove the icons in dropdown on wider screens */
+  .nav-link .fa-plus,
+  .nav-link .fa-minus {
+    display: none;
+  }
+
+  /* Underline effect on hover */
+  .navbar .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #1b3271;
+    transition: width 0.3s ease;
+    margin-bottom: 2px;
+  }
+
+  /* Show dropdown menu with animation */
+  .navbar .dropdown-menu {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1050;
+    background-color: white;
+  }
+
+  /* Dropdown menu appears on hover */
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Dropdown items color */
+  .navbar .dropdown-menu .dropdown-item {
+    color: #1b3271;
+  }
+
+  .navbar .dropdown-menu .dropdown-item:hover {
+    color: #fff;
+  }
+
+  .navbar {
+    position: relative; /* Ensure the navbar is the positioning context */
+  }
+  
+  .navbar .nav-item {
+    position: relative; /* Ensure each nav-item is positioned relative */
+  }
+  
+  .navbar .dropdown-menu {
+    position: absolute; /* Position dropdown relative to nav-item */
+    top: 100%; /* Align dropdown directly below nav-link */
+    left: 0; /* Align to the right of nav-item */
+    width: 100vw; /* Full width of the viewport */
+    max-width: 300px; /* Optional: Limit maximum width */
+    display: none; /* Initially hidden */
+    margin: 0; /* No margin for smooth alignment */
+    background-color: white; /* Set background color */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+    transform: translateY(20px); /* Start lower */
+    opacity: 0; /* Start invisible */
+    transition: all 0.6s ease; /* Smooth transition */
+  }
+}
+
