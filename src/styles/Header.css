@@ -232,5 +232,12 @@
     opacity: 0; /* Start invisible */
     transition: all 0.6s ease; /* Smooth transition */
   }
+
+  .contact-us-link .nav-link {
+    margin-left: 2rem;
+    background-color: #1b3271;
+    color: #fff !important;
+    box-shadow: 0px 4px 8px rgba(27, 50, 113, 0.9);
+  }
 }
 

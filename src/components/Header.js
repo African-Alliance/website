@@ -64,7 +64,7 @@ export default function Header() {
                 <a
                   className="nav-link d-flex align-items-center"
                   href="#"
-                  // onClick={() => toggleDropdown(0)}
+                  onClick={() => toggleDropdown(0)}
                   role="button"
                   aria-expanded={expandedDropdown === 0}
                 >
@@ -122,8 +122,8 @@ export default function Header() {
                   className={`dropdown-menu ${expandedDropdown === 2 ? 'show' : 'd-none'}`}
                 >
                   <li><Link className="dropdown-item" to="/who-we-are" onClick={handleCloseOffcanvas}>WHO WE ARE</Link></li>
-                  <li><Link className="dropdown-item" to="/management-team" onClick={handleCloseOffcanvas}>MANAGEMENT TEAM</Link></li>
-                  <li><Link className="dropdown-item" to="/board-of-directors" onClick={handleCloseOffcanvas}>BOARD OF DIRECTORS</Link></li>
+                  <li><Link className="dropdown-item" to="/management" onClick={handleCloseOffcanvas}>MANAGEMENT TEAM</Link></li>
+                  <li><Link className="dropdown-item" to="/our-board" onClick={handleCloseOffcanvas}>BOARD OF DIRECTORS</Link></li>
                 </ul>
               </li>
 
@@ -196,13 +196,13 @@ export default function Header() {
                 className={`dropdown-menu `}
               >
                 <li><Link className="dropdown-item" to="/who-we-are" >WHO WE ARE</Link></li>
-                <li><Link className="dropdown-item" to="/management-team" >MANAGEMENT TEAM</Link></li>
-                <li><Link className="dropdown-item" to="/board-of-directors" >BOARD OF DIRECTORS</Link></li>
+                <li><Link className="dropdown-item" to="/management" >MANAGEMENT TEAM</Link></li>
+                <li><Link className="dropdown-item" to="/our-board" >BOARD OF DIRECTORS</Link></li>
               </ul>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/contact" onClick={handleCloseOffcanvas}>CONTACT US</Link>
+            <li className="nav-item contact-us-link">
+              <Link className="nav-link" style={{color: 'white'}} to="/contact">CONTACT US</Link>
             </li>
           </ul>
         </div>
