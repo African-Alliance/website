@@ -32,22 +32,49 @@
 
 
 
+
+
 /* MOBILE RESPONSIVENESS */
 @media (max-width: 768px) {
-
-
-
     .carousel-caption {
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
     }
 
-
-
     .custom-caption {
         background: rgba(255, 255, 255, 0.7); /* Slight white background on mobile */
         width: 80vw;
     }
+
+
+    #carouselExampleFade {
+        height: 350px;
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+    .carousel-item {
+        height: 100%;
+    }
+    .carousel-image {
+        height: 100%;
+    }
 }
+
+@media (min-width: 768px) {
+    .big-screen-carousel {
+        height: 50vh;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .big-screen-carousel {
+        height: 70vh;
+    }
+
+}
+
+
 

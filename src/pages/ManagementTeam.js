@@ -33,7 +33,7 @@ export default function Management() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/amaka.jpg?p=38" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Amaka Okafor</h1>
                             </div>
-                            <p>Ukamaka Okafor is a corporate marketer, sales strategist and Business
+                            <p className='offcanvas-text'>Ukamaka Okafor is a corporate marketer, sales strategist and Business
                                 Continuity professional with almost two decades’ experience in the
                                 insurance industry. She started out as an Assistant Manager at the
                                 defunct United Trust Insurance in 2001 and after four years of
@@ -74,7 +74,7 @@ export default function Management() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/mr_akinbode.jpg?g=223" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Akinbode Raji</h1>
                             </div>
-                            <p>Akinbode Raji is a Certified Forensic Accountant and Tax professional
+                            <p className='offcanvas-text'>Akinbode Raji is a Certified Forensic Accountant and Tax professional
                                 with 20 years’ experience in Finance, Risk and Compliance and Internal
                                 Audit. He started his career as a Senior Clerical Officer in the finance
                                 department at African Alliance in 2000. He worked his way through
@@ -116,7 +116,7 @@ export default function Management() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/alice.jpg?g=223" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Alice Amina Uwodi</h1>
                             </div>
-                            <p>Alice Amina Uwodi is a chartered secretary and administrator with 25
+                            <p className='offcanvas-text'>Alice Amina Uwodi is a chartered secretary and administrator with 25
                                 years’ post youth service experience in human resources, general office
                                 administration and personnel management. She began her career as a
                                 Finance and Administrative Officer at AG Leventis PLC before being
@@ -159,7 +159,7 @@ export default function Management() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/emmanuel.jpg?g=223" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Emmanuel Eburajolo</h1>
                             </div>
-                            <p>Emmanuel Ojelre Eburajolor is a dynamic and technical sales professional
+                            <p className='offcanvas-text'>Emmanuel Ojelre Eburajolor is a dynamic and technical sales professional
                                 with about 30 years’ experience in driving sales targets across both
                                 life and non-life insurance. He started his career as a General Duties
                                 Officer at African Development Insurance Company in 1990. His natural
@@ -198,7 +198,7 @@ export default function Management() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/Philip.jpg?g=223" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Philip Ikhianosime</h1>
                             </div>
-                            <p>Philip is a seasoned Human Resource Management professional with keen
+                            <p className='offcanvas-text'>Philip is a seasoned Human Resource Management professional with keen
                                 interest and skills in the development of employees’ potentials. He has
                                 over 20 years practical experience in the field of Human Resource
                                 Management, strategy and business development. He has interests and

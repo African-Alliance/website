@@ -11,22 +11,6 @@ const HorizontalScrollSection = () => {
     const [colors, setColors] = useState({});
     const imgRefs = useRef([]);
 
-    useEffect(() => {
-        const colorThief = new ColorThief();
-        imgRefs.current.forEach((img, index) => {
-            if (img.complete) {
-                setDominantColor(img, index, colorThief);
-            } else {
-                img.onload = () => setDominantColor(img, index, colorThief);
-            }
-        });
-    }, []);
-
-    const setDominantColor = (img, index, colorThief) => {
-        const color = colorThief.getColor(img);
-        setColors(prevColors => ({ ...prevColors, [index]: `rgb(${color[0]},${color[1]},${color[2]})` }));
-    };
-
     const slides = [
         {
             src: groupInvestment,
@@ -60,9 +44,8 @@ const HorizontalScrollSection = () => {
     ]
 
     return (
-
         <>
-            <div id="carouselExampleFade" className="carousel slide carousel-fade d-md-none" data-ride="carousel" data-interval="3000">
+            <div id="carouselExampleFade" className="carousel small-screen-carousel slide carousel-fade d-md-none" data-ride="carousel" data-interval="3000" >
                 <ol className="carousel-indicators">
                     {slides.map((_, index) => (
                         <li key={index} data-target="#carouselExampleFade" data-slide-to={index} className={index === 0 ? 'active' : ''}></li>
@@ -73,8 +56,8 @@ const HorizontalScrollSection = () => {
                         <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                             <img
                                 ref={el => imgRefs.current[index] = el}
-                                className="d-block w-100 carousel-image img-fluid"
-
+                                className="d-block w-100 carousel-image"
+                                
                                 src={slide.src}
                                 alt={slide.alt}
                             />
@@ -93,7 +76,7 @@ const HorizontalScrollSection = () => {
             </div>
 
 
-            <div id="videoCarousel" className="carousel slide d-none d-md-block" style={{'height': '70vh'}} data-ride="carousel" data-interval="5000">
+            <div id="videoCarousel" className="carousel big-screen-carousel slide d-none d-md-block" data-ride="carousel" data-interval="5000">
                 <ol className="carousel-indicators">
                     {videoSlides.map((_, index) => (
                         <li key={index} data-target="#videoCarousel" data-slide-to={index} className={index === 0 ? 'active' : ''}></li>
@@ -104,7 +87,7 @@ const HorizontalScrollSection = () => {
                         <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
                             <video className="d-block w-100" autoPlay muted loop>
                                 <source src={slide} type="video/mp4" />
-                                Your browser does not support the video tag.
+                                Your browser does not support the video
                             </video>
 
                         </div>

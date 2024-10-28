@@ -3,13 +3,12 @@ import '../styles/PageStyle.css';
 import '../styles/Material_Icon.css';
 import { Link } from "react-router-dom";
 import banner from '../assets/father_looking_at_sons_eyes.jpg'
+import Banner from "../components/Banner";
 
 export default function InvestmentSpecialPlan() {
     return (
       <div>
-        <div className="banner-image">
-          <img src={banner} alt="investmentspecial" />
-        </div>
+        <Banner image={banner} />
         <div className="product-content d-flex flex-column flex-md-row justify-content-center mt-3 mt-md-5 mx-2 mx-md-0">
           <div className="intro-header text-left text-md-right col-12 col-md-6 typo48 px-4">
             <h3>Build your Future Today.</h3>

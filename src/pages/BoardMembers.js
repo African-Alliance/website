@@ -33,7 +33,7 @@ export default function Board() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/Chairman.png" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sylva Ogwemoh (SAN)</h1>
                             </div>
-                            <p>Sylva Ogwemoh is a Senior Advocate of Nigeria (SAN) with over three decades
+                            <p className='offcanvas-text'>Sylva Ogwemoh is a Senior Advocate of Nigeria (SAN) with over three decades
                                 of experience in Commercial Litigation and Corporate Law. He has vast legal
                                 compliance and private equity experiences where he has advised clients on
                                 structured finance, corporate governance issues, portfolio decision making,
@@ -85,7 +85,7 @@ export default function Board() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/Adiele.png" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Dr Adiele Ekechukwu</h1>
                             </div>
-                            <p>Dr Adiele Ekechukwu is a seasoned professional with over 37 years combined
+                            <p className='offcanvas-text'>Dr Adiele Ekechukwu is a seasoned professional with over 37 years combined
                                 experience in consultancy and advisory, project management and training and
                                 capacity development. He began his career in 1983 as the pioneer
                                 Petrochemical Lecturer in Federal University of Technology, Owerri before
@@ -137,7 +137,7 @@ export default function Board() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/Atasie.png" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Sir Macauley Atasie</h1>
                             </div>
-                            <p>Macauley Atasie is an emerging markets consultant and accomplished
+                            <p className='offcanvas-text'>Macauley Atasie is an emerging markets consultant and accomplished
                                 e-commerce solutions provider with over two decades’ experience across the
                                 fintech space. As Head ePayments, Ventures and Strategy Development in
                                 Accenture Nigeria, Atasie led the conceptualisation and setup of Interswitch
@@ -186,7 +186,7 @@ export default function Board() {
                                 <img src="https://www.africanallianceplc.com/assets/team/img/Bulama%201.png" class="card-img-top" alt="Sylva" />
                                 <h1 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Alhaji Abatcha Bulama</h1>
                             </div>
-                            <p>Alhaji Abatcha Bulama is a member of the Board of African Alliance Insurance
+                            <p className='offcanvas-text'>Alhaji Abatcha Bulama is a member of the Board of African Alliance Insurance
                                 PLC. Alh. Bulama was a graduate of the Ahmadu Bello University, Zaria,
                                 Nigeria with a degree in Accounting and an MBA. He is a Fellow Member of the
                                 Chartered Institute of Bankers of Nigeria (CIBN) & the Institute of

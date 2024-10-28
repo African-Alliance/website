@@ -80,9 +80,10 @@
 .dropdown-item,
 .nav-link {
   padding: 12px 0 20px 20px;
+  margin: 5px 0;
   color: #fff;
-  font-size: 9px;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 500;
   transition: background-color 0.3s ease, color 0.3s ease;
   text-wrap: wrap;
 }
@@ -140,9 +141,10 @@
   .nav-link,
   .dropdown-item {
     padding: 12px 20px;
+    margin: 5px 0;
     color: #fff;
-    font-size: 12px;
-    font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: 500;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
@@ -152,7 +154,7 @@
   /* Navbar background */
   .navbar {
     font-family: 'Arial', sans-serif;
-    padding: 0 10rem;
+    padding: 0 10%;
   }
 
   /* Nav link styling */
@@ -238,6 +240,13 @@
     background-color: #1b3271;
     color: #fff !important;
     box-shadow: 0px 4px 8px rgba(27, 50, 113, 0.9);
+  }
+
+  .nav-link,
+  .dropdown-item {
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 }
 

@@ -13,6 +13,7 @@ import TermAssurance from "./pages/TermAssurance";
 import IncomeInvestment from "./pages/IncomeInvestment";
 import Board from "./pages/BoardMembers";
 import Management from "./pages/ManagementTeam";
+import Contact from "./pages/Contact";
 
 
 // routing the pages
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       {
         path: "/management",
         element: <Management />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
       {
         path: "*",

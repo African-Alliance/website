@@ -4,7 +4,7 @@
 
 .banner-image img {
     width: 100%;
-    height: 70vh;
+    height: 30vh;
 }
 
 
@@ -403,6 +403,15 @@ tr:nth-child(odd) {
 }
 
 /* MOBILE RESPONSIVENESS */
+
+/* big screen  */
+
+@media screen and (min-width: 768px) {
+    .banner-image img {
+        width: 100%;
+        height: 65vh;
+    }
+}
 /* mobile devices */
 @media (max-width: 480px) {
 

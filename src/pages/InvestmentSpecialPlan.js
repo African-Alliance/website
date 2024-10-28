@@ -4,14 +4,13 @@ import '../styles/Material_Icon.css';
 import { Link } from "react-router-dom";
 import banner from '../assets/investment.jpg';
 import graphic from '../assets/explore.jpg'
+import Banner from "../components/Banner";
 
 export default function InvestmentSpecialPlan() {
   return (
     <>
       <div className='intro-container'>
-        <div className="banner-image">
-          <img src={banner} alt="investmentspecial" />
-        </div>
+        <Banner image={banner} />
         <div className="product-content d-flex flex-column flex-md-row justify-content-center mt-3 mt-md-5 mx-2 mx-md-auto">
           <div className="intro-header text-left text-md-right col-12 col-md-6 typo48 px-4 d-flex align-items-center justify-content-start justify-content-md-end">
             <h3>African Alliance Investment Special Plan</h3>
