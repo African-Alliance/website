@@ -14,6 +14,7 @@ import IncomeInvestment from "./pages/IncomeInvestment";
 import Board from "./pages/BoardMembers";
 import Management from "./pages/ManagementTeam";
 import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 
 // routing the pages
@@ -74,6 +75,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/about-us",
+        element: <About />,
       },
       {
         path: "*",

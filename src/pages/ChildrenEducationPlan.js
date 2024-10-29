@@ -29,7 +29,7 @@ export default function ChildrenEducation() {
           style={{ backgroundColor: '#1b3271' }}
         ></hr>
 
-        <div className="investment-container d-flex flex-column align-items-md-start flex-lg-row col-md-9 my-3 pt-md-4 my-md-5 align-items-center justify-content-start">
+        <div className="investment-container d-flex flex-column-reverse align-items-md-start flex-lg-row col-md-9 my-3 pt-md-4 my-md-5 align-items-center justify-content-start">
           <img className="mr-lg-4" src={graphic} alt='product' />
           <div className='investment-text d-flex flex-column justify-content-between mt-3 mt-md-5 mt-lg-0 mx-2 mx-sm-4 mx-md-auto'>
             <h3 className='text-left text-md-right col-12 px-4 px-md-0 d-flex align-items-center justify-content-start'>

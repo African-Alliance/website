@@ -1,0 +1,180 @@
+.about-container {
+    width: 100%;
+}
+
+.about-header h2 {
+    text-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.story-section {
+    margin-top: 1.2rem;
+}
+
+.mission h5,
+.vision h5 {
+    color: #1b3271;
+    text-align: start;
+    font-size: small;
+    font-weight: bold;
+}
+
+
+.about-link {
+    text-decoration: none;
+    color: white;
+    background-color: #1b3271;
+    padding: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.about-link:hover {
+    text-decoration: none;
+    color: #1b3271;
+    background-color: white;
+    border: 1px solid #1b3271;
+}
+
+.story-section p {
+    text-align: justify;
+}
+
+.story-section h2 {
+    text-align: start;
+    font-weight: bold;
+}
+
+.read-more-btn {
+    background: none;
+    border: none;
+    color: #1b3271;
+    /* Matches heading color */
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.read-more-btn:hover {
+    color: #4a4a4a;
+}
+
+.about-action p {
+    text-wrap: wrap;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-action {
+    width: 100%;
+    font-size: 1.05rem;
+    font-weight: 700;
+
+}
+
+.about-link {
+    margin: 0 auto;
+}
+
+.core-value-section h2 {
+    font-weight: 700;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.core-value {
+    background-color: #1b3271;
+    padding: 2.2rem 1.5rem 3rem;
+    margin: 0.8rem 0;
+    color: #fff;
+}
+
+.core-value h3 {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.core-value p {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.small {
+    background-color: #198fd5;
+}
+
+
+
+/* MOBILE RESPONSIVENESS */
+
+/* big screen  */
+
+@media screen and (min-width: 768px) {
+
+    .mission h5,
+    .vision h5 {
+        color: #1b3271;
+        text-align: center;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .mission p,
+    .vision p {
+        text-align: center;
+    }
+
+    .story-section p {
+        text-align: center;
+    }
+
+    .story-section h2 {
+        text-align: center;
+        font-weight: 700;
+    }
+    .core-values {
+        margin: 0 auto;
+        
+    }
+    .core-value {
+        margin: auto 3px;
+    }
+
+    .big {
+        padding: 7rem 1.5rem;
+    }
+
+    .small {
+        padding: 5rem 1.5rem;
+    }
+    .core-values {
+        margin-top: 1.9rem;
+    }
+    .core-value h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+    
+    .core-value p {
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+}
+
+/* mobile devices */
+@media (max-width: 480px) {
+
+    .badge-link {
+        width: 80%;
+    }
+}

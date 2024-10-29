@@ -99,9 +99,10 @@ export default function Header() {
                 <ul
                   className={`dropdown-menu ${expandedDropdown === 1 ? 'show' : 'd-none'}`}
                 >
-                  <li><Link className="dropdown-item" to="/premium-payment" onClick={handleCloseOffcanvas}>PREMIUM PAYMENT</Link></li>
-                  <li><Link className="dropdown-item" to="/verify-annuity" onClick={handleCloseOffcanvas}>VERIFY ANNUITY</Link></li>
-                  <li><Link className="dropdown-item" to="/calculate-premium" onClick={handleCloseOffcanvas}>CALCULATE PREMIUM</Link></li>
+                  <li><a className="dropdown-item" href='https://www.quickteller.com/africanalliance' target='_blank' rel="noreferrer"onClick={handleCloseOffcanvas}>PREMIUM PAYMENT</a></li>
+
+                  <li><a className="dropdown-item" href='https://aaplc.pensionidentity.com/' target='_blank' rel="noreferrer"onClick={handleCloseOffcanvas}>VERIFY ANNUITY</a></li>
+                  <li><a className="dropdown-item" href='https://calculator.africanallianceservices.com/' target='_blank' rel="noreferrer"onClick={handleCloseOffcanvas}>CALCULATE PREMIUM</a></li>
                   <li><Link className="dropdown-item" to="/download-form" onClick={handleCloseOffcanvas}>DOWNLOAD FORM</Link></li>
                 </ul>
               </li>
@@ -121,7 +122,7 @@ export default function Header() {
                 <ul
                   className={`dropdown-menu ${expandedDropdown === 2 ? 'show' : 'd-none'}`}
                 >
-                  <li><Link className="dropdown-item" to="/who-we-are" onClick={handleCloseOffcanvas}>WHO WE ARE</Link></li>
+                  <li><Link className="dropdown-item" to="/about-us" onClick={handleCloseOffcanvas}>WHO WE ARE</Link></li>
                   <li><Link className="dropdown-item" to="/management" onClick={handleCloseOffcanvas}>MANAGEMENT TEAM</Link></li>
                   <li><Link className="dropdown-item" to="/our-board" onClick={handleCloseOffcanvas}>BOARD OF DIRECTORS</Link></li>
                 </ul>
@@ -176,9 +177,10 @@ export default function Header() {
               <ul
                 className={`dropdown-menu `}
               >
-                <li><Link className="dropdown-item" to="/premium-payment" >PREMIUM PAYMENT</Link></li>
-                <li><Link className="dropdown-item" to="/verify-annuity" >VERIFY ANNUITY</Link></li>
-                <li><Link className="dropdown-item" to="/calculate-premium" >CALCULATE PREMIUM</Link></li>
+
+                <li><a className="dropdown-item" href='https://www.quickteller.com/africanalliance' target='_blank' rel="noreferrer">PREMIUM PAYMENT</a></li>
+                <li><a className="dropdown-item" href='https://aaplc.pensionidentity.com/' target='_blank' rel="noreferrer">VERIFY ANNUITY</a></li>
+                <li><a className="dropdown-item" href='https://calculator.africanallianceservices.com/' target='_blank' rel="noreferrer">CALCULATE PREMIUM</a></li>
                 <li><Link className="dropdown-item" to="/download-form" >DOWNLOAD FORM</Link></li>
               </ul>
             </li>
@@ -195,7 +197,7 @@ export default function Header() {
               <ul
                 className={`dropdown-menu `}
               >
-                <li><Link className="dropdown-item" to="/who-we-are" >WHO WE ARE</Link></li>
+                <li><Link className="dropdown-item" to="/about-us" >WHO WE ARE</Link></li>
                 <li><Link className="dropdown-item" to="/management" >MANAGEMENT TEAM</Link></li>
                 <li><Link className="dropdown-item" to="/our-board" >BOARD OF DIRECTORS</Link></li>
               </ul>
