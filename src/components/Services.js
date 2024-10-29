@@ -17,32 +17,31 @@ const Services = () => {
                 <div className='service-container d-flex flex-column justify-content-center'>
                     <div className='container d-flex flex-wrap justify-content-around my-1 my-md-3 w-md-75 service-list'>
                         <div className="col-12 col-sm-6 col-md-3">
-                            <Link className='service'><span className="material-icons">calculate</span>CALCULATE PREMIUM</Link>
-                            <li><a className='service pt-1' href='https://calculator.africanallianceservices.com/' target='_blank' rel="noreferrer">
+                            <a className='service pt-1' href='https://calculator.africanallianceservices.com/' target='_blank' rel="noreferrer">
                                 <span className="material-icons">calculate</span>CALCULATE PREMIUM
-                            </a></li>
+                            </a>
                         </div>
                         <div className="col-12 col-sm-6 col-md-3 ">
-                            <li><a className='service pt-1' href='https://aaplc.pensionidentity.com/' target='_blank' rel="noreferrer">
+                            <a className='service pt-1' href='https://aaplc.pensionidentity.com/' target='_blank' rel="noreferrer">
                                 <span className="material-icons">
                                     domain_verification
                                 </span>ANNUITY VERIFICATION
-                            </a></li>
+                            </a>
                         </div>
                         <div className="col-12 col-sm-6 col-md-3">
-                            <Link className='service'><span class="material-icons">
-                                credit_card
-                            </span>PAY PREMIUM</Link>
-                            <li><a className='service pt-1' href='https://www.quickteller.com/africanalliance' target='_blank' rel="noreferrer">
+                            <a className='service pt-1' href='https://www.quickteller.com/africanalliance' target='_blank' rel="noreferrer">
                                 <span class="material-icons">
                                     credit_card
                                 </span>PAY PREMIUM
-                            </a></li>
+                            </a>
                         </div>
                         <div className="col-12 col-sm-6 col-md-3">
-                            <Link className='service'><span class="material-icons">
-                                download
-                            </span>DOWNLOAD FORMS</Link>
+                            
+                            <a className='service pt-1' href='#' target='_blank' rel="noreferrer">
+                                <span class="material-icons">
+                                    download
+                                </span>DOWNLOAD FORMS
+                            </a>
                         </div>
 
                     </div>
