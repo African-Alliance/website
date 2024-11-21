@@ -15,6 +15,7 @@ import Board from "./pages/BoardMembers";
 import Management from "./pages/ManagementTeam";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 
 // routing the pages
@@ -79,6 +80,10 @@ const router = createBrowserRouter([
       {
         path: "/about-us",
         element: <About />,
+      },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
       },
       {
         path: "*",

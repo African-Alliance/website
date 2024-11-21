@@ -41,7 +41,7 @@ const Footer = () => {
             <h5>Products</h5>
             <div className='content-list'>
               <Link className='content-item'
-              to="/children-education"
+                to="/children-education"
                 onClick={() => {
                   window.scroll({
                     top: 0,
@@ -116,24 +116,132 @@ const Footer = () => {
           <div className='col-md-3 py-4 py-md-1'>
             <h5>Resources</h5>
             <div className='content-list'>
-              <Link className='content-item'><span>News</span></Link>
-              <Link className='content-item'><span>Customer Complaints Policy</span></Link>
-              <Link className='content-item'><span>Claims</span></Link>
-              <Link className='content-item'><span>Complaints</span></Link>
-              <Link className='content-item'><span>Whistle Blower</span></Link>
+              <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>News</span></Link>
+              <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Customer Complaints Policy</span></Link>
+              <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Claims</span></Link>
+              <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Complaints</span></Link>
+              <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Whistle Blower</span></Link>
 
             </div>
           </div>
           <div className='col-md-3'>
             <h5>Company</h5>
             <div className='content-list'>
-              <Link className='content-item'><span>Contact us</span></Link>
-              <Link className='content-item'><span>About</span></Link>
-              <Link className='content-item'><span>Our Values</span></Link>
-              <Link className='content-item'><span>Security Trading Policy</span></Link>
-              <Link className='content-item'><span>Privacy Policy</span></Link>
-              <Link className='content-item'><span>BCP Policy</span></Link>
-              <Link className='content-item'><span>Branch Locator</span></Link>
+                            <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Contact us</span></Link>
+                            <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>About</span></Link>
+                            <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Our Values</span></Link>
+                            <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Security Trading Policy</span></Link>
+                            <Link className='content-item'
+                to="/privacy-policy"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Privacy Policy</span></Link>
+                            <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>BCP Policy</span></Link>
+                            <Link className='content-item'
+                to="/smart-kid-education"
+                onClick={() => {
+                  window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                  });
+                }}
+              ><span>Branch Locator</span></Link>
             </div>
           </div>
         </div>

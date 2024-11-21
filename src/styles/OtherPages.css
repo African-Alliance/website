@@ -1,0 +1,31 @@
+.privacy-policy-banner {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+.privacy-policy-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+.privacy-policy-title span {
+    display: block;
+}
+
+.policy-text {
+    padding-left: 20px; /* Adjust to move "Policy" slightly to the right */
+}
+
+.underline {
+    width: 50%;
+    height: 3px;
+    background-color: white;
+    margin: 10px auto 0;
+}
